@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 653.65 230.19">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke-width: .75px;
+      }
+    </style>
+  </defs>
+  <g id="content">
+    <g>
+      <polygon class="cls-1" points="634.8 .5 18.85 .5 18.85 18.85 .5 18.85 .5 211.34 18.85 211.34 18.85 229.69 634.8 229.69 634.8 211.34 653.15 211.34 653.15 18.85 634.8 18.85 634.8 .5"/>
+      <g>
+        <line class="cls-2" x1="18.98" y1="229.57" x2="65.22" y2="229.57"/>
+        <line class="cls-2" x1="18.98" y1="229.57" x2="63.64" y2="217.6"/>
+        <line class="cls-2" x1="18.98" y1="229.57" x2="59.02" y2="206.45"/>
+        <line class="cls-2" x1="18.98" y1="229.57" x2="51.68" y2="196.87"/>
+        <line class="cls-2" x1="18.98" y1="229.57" x2="42.1" y2="189.52"/>
+        <line class="cls-2" x1="18.98" y1="229.57" x2="30.95" y2="184.9"/>
+        <line class="cls-2" x1="18.98" y1="229.57" x2="18.98" y2="183.32"/>
+      </g>
+      <g>
+        <line class="cls-2" x1="634.66" y1=".5" x2="588.42" y2=".5"/>
+        <line class="cls-2" x1="634.66" y1=".5" x2="590" y2="12.47"/>
+        <line class="cls-2" x1="634.66" y1=".5" x2="594.62" y2="23.62"/>
+        <line class="cls-2" x1="634.66" y1=".5" x2="601.97" y2="33.2"/>
+        <line class="cls-2" x1="634.66" y1=".5" x2="611.54" y2="40.55"/>
+        <line class="cls-2" x1="634.66" y1=".5" x2="622.7" y2="45.17"/>
+        <line class="cls-2" x1="634.66" y1=".5" x2="634.66" y2="46.74"/>
+      </g>
+      <rect class="cls-2" x="4.97" y="4.74" width="18.29" height="18.29"/>
+      <rect class="cls-2" x="630.13" y="206.76" width="18.29" height="18.29"/>
+    </g>
+  </g>
+</svg>

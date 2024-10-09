@@ -1,0 +1,23 @@
+//Utils
+@import "utils/basic";
+@import "utils/mixin";
+@import "utils/variables";
+
+//layout
+@import "layout/header";
+@import "layout/footer";
+
+//Pages
+@import "pages/index";
+@import "pages/about";
+@import "pages/eventsHistory";
+@import "pages/brand";
+@import "pages/product";
+@import "pages/productContent";
+@import "pages/projectsVideo";
+@import "pages/projectsTeachingCulture";
+@import "pages/projectsContent";
+@import "pages/contact";
+@import "pages/news";
+@import "pages/newsContent";
+@import "pages/question";

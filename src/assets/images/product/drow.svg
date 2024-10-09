@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.72 8.43">
+  <defs>
+    <style>
+      .drow-cls-1 {
+        fill: none;
+        stroke: #ad8e5c;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g id="content">
+    <path class="drow-cls-1" d="M17.22,.5l-6.77,6.77c-.44,.44-1.02,.66-1.59,.66s-1.15-.22-1.59-.66L.5,.5" />
+  </g>
+</svg>

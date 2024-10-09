@@ -1,0 +1,275 @@
+.news-body {
+  display: flex;
+  width: 100%;
+  position: relative;
+  flex-direction: column;
+  background-image: url(../images/bg.webp);
+  background-size: contain;
+
+  .top-banner-box {
+    padding-top: 3vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    height: 30vw;
+    .top-banner {
+      width: 100%;
+      @media all and (max-width: 1024px) {
+        margin-top: -10vw;
+      }
+      @media all and (max-width: 500px) {
+        margin-top: -8vw;
+      }
+    }
+    .item1 {
+      position: absolute;
+      width: 36vw;
+      right: 0vw;
+      top: 4vw;
+      @media all and (max-width: 1024px) {
+        width: 62vw;
+        right: -20vw;
+        top: 9vw;
+      }
+    }
+
+    .item2 {
+      position: absolute;
+      width: 4vw;
+      left: 7vw;
+      top: 15vw;
+    }
+
+    .frame {
+      width: 32vw;
+      position: absolute;
+      top: 56%;
+      left: 50%;
+      transform: translate(-50%, -50%) scaleX(-1);
+      @media all and (max-width: 1024px) {
+        width: 80vw;
+        top: 58%;
+        transform: translate(-50%, -50%) scaleX(1);
+      }
+    }
+    .main-title-box {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 52%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      text-align: center;
+      @media all and (max-width: 1024px) {
+        top: 55%;
+      }
+      @media all and (max-width: 500px) {
+        top: 56%;
+      }
+      .main-title-zh {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 2vw;
+        margin-bottom: 0.5vw;
+        @include bannerZHTitle();
+      }
+
+      .main-title-en {
+        position: relative;
+        @include bannerENTitle();
+        text-align: center;
+        &::before {
+          position: absolute;
+          content: "";
+          background-color: white;
+          width: 35%;
+          top: 0.5vw;
+          height: 1px;
+          left: -1.5vw;
+          @media all and (max-width: 1024px) {
+            width: 23%;
+            top: 2vw;
+            left: -1.5vw;
+          }
+        }
+        &::after {
+          position: absolute;
+          content: "";
+          background-color: white;
+          width: 35%;
+          top: 0.5vw;
+          height: 1px;
+          right: -1.5vw;
+          @media all and (max-width: 1024px) {
+            width: 23%;
+            top: 2vw;
+            right: -1.5vw;
+          }
+        }
+      }
+    }
+  }
+
+  .page-container {
+    position: relative;
+    padding-top: 6vw;
+    display: flex;
+    padding-bottom: 7vw;
+    flex-direction: column;
+
+    .left-nav-box {
+      position: absolute;
+      left: 8vw;
+      top: 7vw;
+      font-family: "Noto Serif TC";
+      letter-spacing: 0.25em;
+      font-size: $font-20;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      font-weight: 600;
+      z-index: 30;
+      cursor: pointer;
+      .nav {
+        padding: 0.8vw 0.5vw;
+        border-bottom: 1px solid #e2e2e2;
+        &:first-child {
+          border-top: 1px solid #e2e2e2;
+        }
+      }
+      a {
+        color: #ad8e5c;
+      }
+      .nav-active {
+        color: #3b3b3b !important;
+        background-color: #ffffff;
+      }
+    }
+
+    .content-box {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      width: 100%;
+      align-items: center;
+      .item-box {
+        display: flex;
+        width: 55%;
+        justify-content: space-between;
+        border-bottom: 1px solid #b2b2b2;
+        padding-bottom: 1vw;
+        margin-bottom: 1vw;
+        &:hover {
+          .left-box {
+            .title {
+              color: #d1a371;
+            }
+          }
+          .right-box {
+            img {
+              transform: scale(1.2);
+            }
+          }
+        }
+        &:first-child {
+          border-top: 1px solid #b2b2b2;
+          padding-top: 1vw;
+        }
+
+        .left-box {
+          display: flex;
+          flex-direction: column;
+          .sort-date-box {
+            display: flex;
+            .sort {
+              background-color: #d1a371;
+              font-family: "Noto Serif TC";
+              font-weight: 600;
+              letter-spacing: 0.2em;
+              font-size: $font-18;
+              color: white;
+              border-radius: 0.35vw;
+              padding: 0.3vw;
+              padding-left: 0.7vw;
+              padding-bottom: 0.35vw;
+            }
+            .date {
+              color: #b2b2b2;
+              font-family: "Jost";
+              align-self: center;
+              letter-spacing: 0.15em;
+              font-size: $font-18;
+              margin-left: 1vw;
+            }
+          }
+          .title {
+            color: #3b3b3b;
+            font-family: "Noto Serif TC";
+            font-size: $font-22;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            margin-top: 1vw;
+            transition: 0.4s ease-in-out;
+          }
+        }
+
+        .right-box {
+          display: flex;
+          flex-direction: column;
+          width: 12vw;
+          overflow: hidden;
+          border-radius: 1.2vw;
+
+          img {
+            width: 100%;
+            transition: 0.5s ease-in-out;
+          }
+        }
+      }
+    }
+
+    .pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 4vw;
+      button {
+        padding: 0.3vw 0.6vw;
+        border: none;
+        color: #3b3b3b;
+        font-weight: bold;
+        font-size: $font-20;
+        background: none;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+      }
+    }
+
+    .pagination #page-numbers button {
+      &:hover {
+        background-color: #ffc8007a;
+        color: #3b3b3b;
+      }
+    }
+    .pagination .active {
+      background-color: #ffc8007a;
+      color: #3b3b3b;
+    }
+
+    .top-btn {
+      position: absolute;
+      bottom: 4vw;
+      right: 7vw;
+      width: 3vw;
+      cursor: pointer;
+      transition: 0.4s ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

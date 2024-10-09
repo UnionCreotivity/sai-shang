@@ -1,0 +1,209 @@
+header {
+  width: 100%;
+  z-index: 400;
+  background-color: #93725c;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  transition: background-color 0.3s ease;
+  backdrop-filter: blur(8px);
+  justify-content: space-evenly;
+  padding-top: 0.8vw;
+  padding-bottom: 0.8vw;
+  @media all and (max-width: 1024px) {
+    justify-content: space-between;
+    padding-left: 4vw;
+    padding-top: 2.5vw;
+    padding-bottom: 2.5vw;
+    padding-right: 4vw;
+  }
+  @media all and (max-width: 500px) {
+    padding-left: 6vw;
+    padding-top: 3.5vw;
+    padding-bottom: 3.5vw;
+    padding-right: 6vw;
+  }
+  .logo-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    img {
+      width: 5vw;
+      @media all and (max-width: 1024px) {
+        width: 13vw;
+      }
+      @media all and (max-width: 500px) {
+        width: 18vw;
+      }
+    }
+  }
+
+  .link-item-box {
+    display: flex;
+    @media all and (max-width: 1024px) {
+      display: none;
+    }
+    .link-item {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      align-items: center;
+      padding-right: 3vw;
+
+      &:last-child {
+        padding-right: 0vw;
+      }
+      &:hover {
+        .zh {
+          color: #f9c88f;
+        }
+        .en {
+          color: #fff;
+        }
+      }
+      .zh {
+        color: white;
+        font-family: "Noto Serif TC";
+        letter-spacing: 0.2em;
+        font-size: 18pt;
+        font-size: 0.95vw;
+        margin-bottom: 0.15vw;
+        font-weight: 500;
+        transition: 0.3s ease-in-out;
+      }
+      .en {
+        color: #f9c88f;
+        letter-spacing: 0.15em;
+        font-family: "Jost";
+        font-size: 14pt;
+        font-size: 0.73vw;
+        transition: 0.3s ease-in-out;
+      }
+    }
+  }
+
+  .social-media-box {
+    display: flex;
+    align-items: center;
+    @media all and (max-width: 1024px) {
+      display: none;
+    }
+    a {
+      margin-right: 1vw;
+      img {
+        width: 1.5vw;
+      }
+    }
+
+    .yt {
+      img {
+        width: 1.3vw;
+      }
+      margin-right: 0vw;
+    }
+  }
+
+  .menu-btn {
+    display: none;
+    position: relative;
+    @media all and (max-width: 1024px) {
+      display: flex;
+    }
+
+    img {
+      width: 7vw;
+      @media all and (max-width: 500px) {
+        width: 9vw;
+      }
+    }
+    .open-menu {
+      z-index: 30;
+    }
+    .close-menu {
+      position: absolute;
+      top: 0px;
+      left: 1.5vw;
+      width: 4vw;
+      opacity: 0;
+      @media all and (max-width: 500px) {
+        width: 6vw;
+      }
+    }
+  }
+}
+
+// 手機版目錄
+
+.menu-box {
+  max-width: 1024px;
+  background-color: white;
+  background-image: url(../images/bg.webp);
+  background-size: cover;
+  z-index: 50;
+  height: 0vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  overflow: hidden;
+  display: none;
+  @media all and (max-width: 1024px) {
+    display: block;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    padding-top: 18vw;
+    .link-item-box {
+      display: flex;
+      align-self: center;
+      flex-direction: column;
+
+      .link-item {
+        display: flex;
+        border-bottom: 1px solid #ddb57c;
+        padding-bottom: 3vw;
+        padding-top: 3vw;
+        .zh {
+          color: #9e7c4a;
+          font-family: "Noto Serif TC";
+          letter-spacing: 0.2em;
+          font-size: 3.8vw;
+          margin-bottom: 0.15vw;
+          font-weight: 500;
+        }
+        .en {
+          color: #ddb57c;
+          letter-spacing: 0.1em;
+          font-family: "Jost";
+          font-weight: 500;
+          margin-left: 4vw;
+          font-size: 2.8vw;
+          align-self: center;
+        }
+      }
+    }
+
+    .social-media-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10vw;
+      a {
+        margin-right: 5vw;
+        img {
+          width: 7vw;
+        }
+      }
+
+      .yt {
+        img {
+          width: 6vw;
+        }
+        margin-right: 0vw;
+      }
+    }
+  }
+}

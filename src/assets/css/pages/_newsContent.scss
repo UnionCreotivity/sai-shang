@@ -1,0 +1,232 @@
+.news-content-body {
+  display: flex;
+  width: 100%;
+  position: relative;
+  flex-direction: column;
+  background-image: url(../images/bg.webp);
+  background-size: contain;
+
+  .news-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    .page-container {
+      display: flex;
+      width: 55%;
+      flex-direction: column;
+      padding-top: 8vw;
+      position: relative;
+      padding-bottom: 5vw;
+      .sort-box {
+        display: flex;
+        margin-bottom: 1vw;
+        .sort {
+          background-color: #d1a371;
+          font-family: "Noto Serif TC";
+          font-weight: 600;
+          letter-spacing: 0.2em;
+          font-size: $font-18;
+          color: white;
+          border-radius: 0.25vw;
+          padding: 0.3vw;
+          padding-left: 0.6vw;
+          padding-bottom: 0.35vw;
+        }
+      }
+
+      .title {
+        font-family: "Noto Serif TC";
+        color: #3b3b3b;
+        letter-spacing: 0.15em;
+        font-weight: bold;
+        font-size: $font-28;
+        margin-bottom: 3vw;
+      }
+
+      .main-img-box {
+        display: flex;
+        width: 100%;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .content-box {
+        display: flex;
+        width: 100%;
+        margin-top: 3vw;
+
+        padding-bottom: 10vw;
+        .left-box {
+          display: flex;
+          flex-direction: column;
+          width: 30%;
+
+          .date-box {
+            display: flex;
+            margin-bottom: 1vw;
+            .date-title {
+              font-family: "Noto Serif TC";
+              color: #3b3b3b;
+              letter-spacing: 0.15em;
+              font-size: $font-14;
+              font-weight: 500;
+              align-self: center;
+              margin-right: 0.7vw;
+            }
+            .date {
+              font-family: "Jost";
+              font-size: $font-18;
+              color: #b2b2b2;
+              align-self: center;
+              letter-spacing: 0.15em;
+            }
+          }
+
+          .link-box {
+            display: flex;
+            width: 100%;
+
+            .link-icon {
+              margin-right: 0.5vw;
+              // margin-top: 0.3vw;
+
+              align-self: center;
+
+              img {
+                width: 1vw;
+              }
+            }
+
+            .link {
+              color: #ad8e5c;
+              letter-spacing: 0.15em;
+              font-family: "Jost", "Noto Serif TC"; /* 預設為中文字體 */
+              font-size: $font-18;
+              padding-bottom: 0.2vw;
+              font-weight: 500;
+              display: flex;
+              align-self: center;
+              position: relative;
+              word-break: break-all;
+              flex-wrap: wrap;
+              transition: 0.2s ease-in-out;
+              display: flex;
+
+              &::after {
+                position: absolute;
+                content: "";
+                background-color: #ad8e5c;
+                width: 100%;
+                height: 1px;
+                bottom: 0px;
+                left: 0px;
+              }
+
+              &:hover {
+                color: #3b3b3b;
+                &::after {
+                  background-color: #3b3b3b;
+                }
+              }
+            }
+          }
+        }
+        .right-box {
+          width: 70%;
+          font-family: "Noto Serif TC";
+          color: #3b3b3b;
+          font-weight: 600;
+          font-size: $font-20;
+          letter-spacing: 0.15em;
+          line-height: 2;
+          margin-left: 2vw;
+        }
+      }
+
+      .about-article-box {
+        display: flex;
+        flex-direction: column;
+
+        .about-title {
+          color: #3b3b3b;
+          font-size: $font-28;
+          letter-spacing: 0.15em;
+          font-weight: 600;
+          font-family: "Noto Serif TC";
+          padding-bottom: 1vw;
+          margin-bottom: 3vw;
+          border-bottom: 1px solid #b2b2b2;
+        }
+
+        .article-box {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          .item {
+            display: flex;
+            flex-direction: column;
+            width: 17.5vw;
+
+            .img-box {
+              display: flex;
+              flex-direction: column;
+              align-self: center;
+              width: 100%;
+              overflow: hidden;
+              border-radius: 1.3vw;
+
+              img {
+                width: 100%;
+                transition: 0.8s ease-in-out;
+              }
+            }
+
+            .title {
+              font-size: $font-22;
+              text-align: justify;
+              margin-top: 1vw;
+              line-height: 2;
+              margin-bottom: 1vw;
+              transition: 0.8s ease-in-out;
+            }
+
+            .date {
+              color: #b2b2b2;
+              font-size: $font-18;
+              font-weight: 500;
+              letter-spacing: 0.2em;
+            }
+
+            &:hover {
+              .title {
+                color: #93725c;
+              }
+
+              .img-box {
+                img {
+                  transform: scale(1.1);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .back-btn {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        width: 3vw;
+        margin-top: 5vw;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}

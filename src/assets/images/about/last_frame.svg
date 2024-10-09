@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 513.96 321.38">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #f9c88f;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #ddb57c;
+        stroke-miterlimit: 10;
+        stroke-width: .75px;
+      }
+
+      .cls-2 {
+        opacity: .3;
+      }
+    </style>
+  </defs>
+  <g id="liquid">
+    <g>
+      <rect class="cls-3" x="471.01" y=".37" width="42.58" height="42.58" rx="21.29" ry="21.29" transform="translate(513.96 -470.63) rotate(90)"/>
+      <rect class="cls-3" x="2.35" y=".37" width="42.58" height="42.58" rx="21.29" ry="21.29" transform="translate(45.31 -1.98) rotate(90)"/>
+      <rect class="cls-3" x="471.01" y="278.09" width="42.58" height="42.58" rx="21.29" ry="21.29" transform="translate(791.68 -192.92) rotate(90)"/>
+      <path class="cls-3" d="M5.51,299.39V28.47c-.01-13.81,11.18-25,24.99-25H484.96c13.81,0,25,11.19,25,25V291.81c0,13.81-11.19,25-25,25H20.81"/>
+    </g>
+    <g>
+      <circle class="cls-2" cx="11.77" cy="309.61" r="11.77"/>
+      <circle class="cls-1" cx="11.77" cy="309.61" r="7.09"/>
+    </g>
+  </g>
+</svg>

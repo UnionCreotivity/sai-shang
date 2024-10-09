@@ -1,0 +1,289 @@
+.brand-body {
+  display: flex;
+  width: 100%;
+  position: relative;
+  flex-direction: column;
+  background-image: url(../images/bg.webp);
+  background-size: contain;
+
+  .top-banner-box {
+    padding-top: 3vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    height: 30vw;
+    @media all and (max-width: 1024px) {
+      overflow: hidden;
+      width: 100%;
+      height: 58vw;
+      background-image: url(../images/brand/mobile_banner.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: bottom;
+    }
+    @media all and (max-width: 500px) {
+      height: 62vw;
+    }
+    .top-banner {
+      width: 100%;
+      @media all and (max-width: 1024px) {
+        display: none;
+      }
+    }
+    .item1 {
+      position: absolute;
+      width: 7vw;
+      left: 20vw;
+      top: 8vw;
+
+      @media all and (max-width: 1024px) {
+        width: 20vw;
+        left: 16vw;
+        top: 10vw;
+      }
+
+      @media all and (max-width: 500px) {
+        top: 15vw;
+      }
+    }
+    .item2 {
+      position: absolute;
+      width: 38vw;
+      right: 3vw;
+      bottom: 0vw;
+      @media all and (max-width: 1024px) {
+        width: 69vw;
+        right: -11vw;
+        bottom: 0vw;
+      }
+    }
+    .frame {
+      width: 32vw;
+      position: absolute;
+      top: 56%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      @media all and (max-width: 1024px) {
+        width: 80vw;
+        top: 58%;
+      }
+      @media all and (max-width: 500px) {
+        top: 61%;
+      }
+    }
+    .main-title-box {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 52%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      text-align: center;
+      @media all and (max-width: 1024px) {
+        top: 55%;
+      }
+
+      @media all and (max-width: 500px) {
+        top: 58%;
+      }
+
+      .main-title-zh {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 2vw;
+        margin-bottom: 0.5vw;
+        @include bannerZHTitle();
+      }
+
+      .main-title-en {
+        position: relative;
+        @include bannerENTitle();
+        text-align: center;
+        &::before {
+          position: absolute;
+          content: "";
+          background-color: white;
+          width: 35%;
+          top: 0.5vw;
+          height: 1px;
+          left: -1.5vw;
+
+          @media all and (max-width: 1024px) {
+            width: 20%;
+            top: 2vw;
+            left: -0.5vw;
+          }
+        }
+        &::after {
+          position: absolute;
+          content: "";
+          background-color: white;
+          width: 35%;
+          top: 0.5vw;
+          height: 1px;
+          right: -1.5vw;
+
+          @media all and (max-width: 1024px) {
+            width: 20%;
+            top: 2vw;
+            right: -0.5vw;
+          }
+        }
+      }
+    }
+  }
+
+  .page-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12vw;
+    @media all and (max-width: 1024px) {
+      justify-content: center;
+    }
+    .top-btn {
+      position: absolute;
+      bottom: 4vw;
+      right: 7vw;
+      width: 3vw;
+      cursor: pointer;
+      transition: 0.4s ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+      }
+      @media all and (max-width: 1024px) {
+        width: 15vw;
+        margin-top: 15vw;
+        position: initial;
+        bottom: initial;
+        right: initial;
+
+        align-self: center;
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    .brand-box {
+      display: flex;
+      justify-content: space-between;
+      width: 70%;
+      margin: 0 auto;
+      margin-top: 7vw;
+      @media all and (max-width: 1024px) {
+        flex-direction: column;
+        width: 88%;
+        margin-bottom: 2vw;
+      }
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+        @media all and (max-width: 1024px) {
+          flex-direction: column;
+        }
+        .left-box {
+          .content-item {
+            width: 2vw;
+            position: absolute;
+            bottom: -1vw;
+            left: initial;
+            right: 6vw;
+          }
+        }
+      }
+
+      .left-box {
+        width: 40%;
+        position: relative;
+        @media all and (max-width: 1024px) {
+          width: 100%;
+        }
+        .brand-name-box {
+          display: flex;
+          position: relative;
+          width: 40%;
+          margin-bottom: 3vw;
+          @media all and (max-width: 1024px) {
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            margin: 0 auto;
+            margin-bottom: 7vw;
+            margin-top: 3vw;
+          }
+          .brand-name {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            position: relative;
+            width: 100%;
+            align-self: center;
+            text-align: center;
+            position: relative;
+            .name-frame {
+              position: absolute;
+              width: 11vw;
+              left: 0px;
+              top: 0.4vw;
+              @media all and (max-width: 1024px) {
+                width: 37vw;
+                left: -1.2vw;
+                top: 2vw;
+              }
+            }
+            .small-name {
+              color: #3b3b3b;
+              font-weight: bold;
+              letter-spacing: 0.2em;
+              font-family: "Noto Serif TC";
+              margin-bottom: 0.4vw;
+              font-size: $font-18;
+              @media all and (max-width: 1024px) {
+                font-size: 3.2vw;
+              }
+            }
+            .name {
+              color: #aa7744;
+              font-family: "Noto Serif TC";
+              font-weight: bold;
+              letter-spacing: 0.2em;
+              font-size: $font-30;
+              @media all and (max-width: 1024px) {
+                font-size: $zh-title;
+              }
+            }
+          }
+        }
+        .content {
+          @include pageContent();
+          text-align: justify;
+          width: 90%;
+          @media all and (max-width: 1024px) {
+            width: 100%;
+          }
+        }
+        .content-item {
+          width: 2vw;
+          position: absolute;
+          bottom: -1vw;
+          left: 5vw;
+          @media all and (max-width: 1024px) {
+            display: none;
+          }
+        }
+      }
+      .right-box {
+        width: 50%;
+        @media all and (max-width: 1024px) {
+          width: 100%;
+          margin-top: 7vw;
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,683 @@
+.index-body {
+  display: flex;
+  width: 100%;
+  position: relative;
+  flex-direction: column;
+  background-image: url(../images/bg.webp);
+  background-size: contain;
+
+  .card1 {
+    display: flex;
+    flex-direction: column;
+    .banner-box {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      .banner-swiper {
+        width: 100%;
+        overflow: hidden;
+        .swiper-wrapper {
+          width: 100%;
+          .swiper-slide {
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            position: relative;
+
+            img {
+              width: 100vw;
+            }
+          }
+        }
+      }
+
+      .banner {
+        width: 100%;
+      }
+
+      .banner-content-box {
+        position: absolute;
+        right: 9vw;
+        top: 10vw;
+        display: flex;
+        color: white;
+        flex-direction: column;
+
+        .title {
+          display: flex;
+          margin-bottom: 2vw;
+
+          .block {
+            width: 2vw;
+            margin-top: -2vw;
+            margin-right: 0.5vw;
+          }
+          .zh {
+            font-family: "Noto Serif TC";
+            letter-spacing: 0.2em;
+            font-size: 1.5vw;
+            font-weight: bold;
+            align-self: center;
+          }
+          .en {
+            color: #f9c88f;
+            letter-spacing: 0.1em;
+            font-family: "Jost";
+            font-size: $font-18;
+            align-self: center;
+            margin-left: 1vw;
+          }
+        }
+
+        .content {
+          display: flex;
+          padding-left: 2.5vw;
+          letter-spacing: 0.15em;
+          font-family: "Noto Serif TC";
+          line-height: 2.5;
+          font-size: 0.95vw;
+        }
+        .big-content {
+          display: flex;
+          font-family: "Noto Serif TC";
+          letter-spacing: 0.15em;
+          padding-left: 2vw;
+          font-size: 0.95vw;
+          margin-top: 0.45vw;
+          align-items: end;
+          font-weight: bold;
+          .big {
+            font-size: 1.3vw;
+            margin-left: 0.5vw;
+          }
+        }
+        .icon-content-box {
+          display: flex;
+          padding-left: 2.5vw;
+          margin-top: 4vw;
+          .text {
+            font-size: 0.65vw;
+            font-family: "Noto Serif TC";
+            letter-spacing: 0.15em;
+            margin-right: 1vw;
+            align-self: center;
+            span {
+              padding-left: 0.3vw;
+              padding-right: 0.2vw;
+              padding-bottom: 0.1vw;
+              border: 1px solid white;
+            }
+          }
+          .icon {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: -0.5vw;
+            img {
+              width: 10vw;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .card2 {
+    display: flex;
+    width: 100%;
+    padding: 4vw 11vw;
+    justify-content: space-between;
+    @media all and (max-width: 1024px) {
+      padding: 0vw;
+      padding-top: 8vw;
+      width: 90%;
+      align-self: center;
+      flex-direction: column;
+      padding-bottom: 10vw;
+    }
+    .left-box {
+      display: flex;
+
+      .img-box {
+        width: 14.5vw;
+        padding-top: 1vw;
+        overflow: hidden;
+        @media all and (max-width: 1024px) {
+          display: none;
+        }
+        img {
+          width: 100%;
+        }
+      }
+      .content-box {
+        display: flex;
+        margin-left: 6vw;
+        position: relative;
+        flex-direction: column;
+        @media all and (max-width: 1024px) {
+          margin-left: 0vw;
+        }
+        .icon {
+          position: absolute;
+          top: -1.5vw;
+          left: -2vw;
+          width: 2vw;
+          @media all and (max-width: 1024px) {
+            top: -3.5vw;
+            left: 26vw;
+            width: 5.5vw;
+          }
+        }
+        .title {
+          @include pageContentZHTitle();
+          text-align: left;
+          flex-direction: row;
+          @media all and (max-width: 1024px) {
+            margin-bottom: 4vw;
+          }
+          div {
+            @include pageContentENTitle();
+          }
+        }
+        .content {
+          color: #3b3b3b;
+          font-size: $font-20;
+          font-weight: 500;
+          letter-spacing: 0.15em;
+          line-height: 2;
+          font-family: "Noto Serif TC";
+          margin-top: 1vw;
+          @media all and (max-width: 1024px) {
+            display: none;
+          }
+        }
+
+        .content-mobile {
+          display: none;
+          @media all and (max-width: 1024px) {
+            font-size: $content;
+            display: flex;
+            text-align: justify;
+            margin-top: 2vw;
+          }
+        }
+
+        .more-btn-box {
+          display: flex;
+          margin-top: 2vw;
+
+          @media all and (max-width: 1024px) {
+            justify-content: center;
+            margin-top: 8vw;
+            margin-bottom: 9vw;
+          }
+          .more-btn {
+            display: flex;
+            border: 1px solid #ddb57c;
+            padding: 0.25vw 1vw;
+            border-radius: 0.3vw;
+            &:hover {
+              img {
+                transform: translateX(0.5vw);
+              }
+            }
+            @media all and (max-width: 1024px) {
+              padding: 1vw 4vw;
+              border-radius: 0.6vw;
+            }
+            .more {
+              color: #ddb57c;
+              letter-spacing: 0.15em;
+              font-family: "Jost";
+              font-size: $font-18;
+              font-weight: bold;
+              border: none;
+              margin-right: 0.3vw;
+              @media all and (max-width: 1024px) {
+                font-size: $en-title;
+                margin-right: 1vw;
+              }
+            }
+            img {
+              width: 0.9vw;
+              transition: 0.4s ease-in-out;
+              @media all and (max-width: 1024px) {
+                width: 3.5vw;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .right-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      @media all and (max-width: 1024px) {
+        align-items: center;
+      }
+
+      .img-box {
+        width: 21vw;
+        @media all and (max-width: 1024px) {
+          display: none;
+        }
+        img {
+          width: 100%;
+        }
+      }
+
+      .mobile-img-box {
+        display: none;
+
+        @media all and (max-width: 1024px) {
+          display: flex;
+          width: 98%;
+          justify-content: center;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .card3 {
+    display: flex;
+    flex-direction: column;
+    padding: 3.5vw;
+    background-image: url(../images/index/c3_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media all and (max-width: 1024px) {
+      padding: 0vw;
+      padding-top: 8vw;
+      width: 100%;
+      align-self: center;
+      flex-direction: column;
+      padding-bottom: 10vw;
+    }
+    .title-box {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      align-self: center;
+      margin-bottom: 2vw;
+      @media all and (max-width: 1024px) {
+        margin-bottom: 7vw;
+      }
+      .icon {
+        @include pageContentTitleIcon();
+      }
+      .zh {
+        @include pageContentZHTitle();
+      }
+      .en {
+        @include pageContentENTitle();
+      }
+    }
+    .content-box {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      .swiper-prev {
+        position: absolute;
+        left: 15vw;
+        top: 4vw;
+        cursor: pointer;
+        padding: 1vw;
+        img {
+          width: 0.8vw;
+        }
+      }
+      .swiper-next {
+        right: 16vw;
+        top: 4vw;
+        padding: 1vw;
+        position: absolute;
+        cursor: pointer;
+        img {
+          width: 0.8vw;
+        }
+      }
+      .product-swiper {
+        width: 58%;
+        position: relative;
+        @media all and (max-width: 1024px) {
+          width: 88%;
+        }
+      }
+      .c3-swiper-pagination {
+        display: none;
+        @media all and (max-width: 1024px) {
+          display: block;
+        }
+      }
+      .swiper-pagination-horizontal {
+        bottom: -6.5vw;
+      }
+      .swiper-pagination-bullet {
+        background: #d1a371;
+        opacity: 1;
+        margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 6px);
+      }
+      .swiper-pagination-bullet-active {
+        transform: scale(1.6);
+      }
+      .product-item {
+        display: flex;
+        flex-direction: column;
+        margin-right: 1vw;
+
+        &:last-child {
+          margin-right: 0vw;
+        }
+        .img-box {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+          border-radius: 1.2vw;
+
+          &:hover {
+            img {
+              transform: scale(1.1);
+            }
+          }
+
+          img {
+            align-items: center;
+            vertical-align: middle;
+            align-self: center;
+            align-content: center;
+            width: 100%;
+            transition: 0.6s ease-in-out;
+          }
+        }
+
+        .product-name {
+          display: flex;
+          font-family: "Noto Serif TC";
+          font-weight: 600;
+          color: #3b3b3b;
+          letter-spacing: 0.25em;
+          margin-top: 1.5vw;
+          font-size: $font-18;
+          @media all and (max-width: 1024px) {
+            font-size: $content;
+            justify-content: center;
+          }
+          .name {
+            position: relative;
+            &::after {
+              content: "";
+              position: absolute;
+              right: -0.65vw;
+              height: 75%;
+              width: 1px;
+              bottom: 0.07vw;
+              background-color: #3b3b3b;
+            }
+          }
+          .content {
+            margin-left: 1.5vw;
+          }
+        }
+      }
+    }
+
+    .more-btn-box {
+      display: flex;
+      justify-content: center;
+      margin-top: 3vw;
+      width: 50%;
+      align-self: center;
+      @media all and (max-width: 1024px) {
+        justify-content: center;
+        margin-top: 12vw;
+        margin-bottom: 0vw;
+      }
+      .more-btn {
+        display: flex;
+        border: 1px solid #ddb57c;
+        padding: 0.25vw 1vw;
+        border-radius: 0.3vw;
+        &:hover {
+          img {
+            transform: translateX(0.5vw);
+          }
+        }
+        @media all and (max-width: 1024px) {
+          padding: 1vw 4vw;
+          border-radius: 0.6vw;
+        }
+        .more {
+          color: #ddb57c;
+          letter-spacing: 0.15em;
+          font-family: "Jost";
+          font-size: $font-18;
+          font-weight: bold;
+          border: none;
+          margin-right: 0.3vw;
+          @media all and (max-width: 1024px) {
+            font-size: $en-title;
+            margin-right: 1vw;
+          }
+        }
+        img {
+          width: 0.9vw;
+          transition: 0.4s ease-in-out;
+          @media all and (max-width: 1024px) {
+            width: 3.5vw;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    @media all and (max-width: 1024px) {
+      z-index: 30;
+    }
+  }
+
+  .card4 {
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    position: relative;
+
+    @media all and (max-width: 1024px) {
+      flex-direction: column;
+      padding-top: 8vw;
+      overflow: hidden;
+    }
+
+    .left-bg {
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+      width: 55vw;
+      @media all and (max-width: 1024px) {
+        width: 100%;
+        bottom: -20vw;
+      }
+    }
+
+    .all-content-box {
+      display: flex;
+      padding: 3.5vw;
+      margin-right: 10vw;
+      @media all and (max-width: 1024px) {
+        flex-direction: column;
+        margin-right: 0vw;
+        padding: 0vw;
+      }
+      .left-box {
+        .title-box {
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          align-self: center;
+          margin-bottom: 2vw;
+          @media all and (max-width: 1024px) {
+            margin-bottom: 7vw;
+          }
+          .icon {
+            @include pageContentTitleIcon();
+            @media all and (max-width: 1024px) {
+              width: 5.5vw;
+              top: -3.3vw;
+              left: 30vw;
+            }
+          }
+          .zh {
+            @include pageContentZHTitle();
+          }
+          .en {
+            @include pageContentENTitle();
+          }
+        }
+      }
+
+      .right-box {
+        display: flex;
+        flex-direction: column;
+        margin-left: 8vw;
+        @media all and (max-width: 1024px) {
+          margin-left: 0vw;
+          width: 88%;
+          align-self: center;
+          margin-bottom: 42vw;
+        }
+        .news-box {
+          display: flex;
+          flex-direction: column;
+          .news-item {
+            display: flex;
+            padding-top: 1vw;
+            flex-direction: column;
+            border-bottom: 1px solid #b2b2b2;
+            padding-bottom: 1vw;
+            @media all and (max-width: 1024px) {
+              padding-bottom: 4vw;
+              padding-top: 3vw;
+            }
+            &:hover {
+              .title {
+                color: #d1a371;
+              }
+            }
+
+            &:first-child {
+              padding-top: 0vw;
+            }
+
+            .date-box {
+              display: flex;
+              font-family: "Jost";
+              color: #b2b2b2;
+              font-style: italic;
+              margin-bottom: 0.8vw;
+              letter-spacing: 0.15em;
+              align-items: end;
+              font-size: $font-18;
+              @media all and (max-width: 1024px) {
+                font-size: 3.6vw;
+                margin-bottom: 2vw;
+              }
+              .year {
+                font-size: $font-18;
+                align-self: flex-end;
+                font-weight: 500;
+                font-style: initial;
+                margin-right: 0.1vw;
+                @media all and (max-width: 1024px) {
+                  font-size: 3.6vw;
+                }
+              }
+
+              .month {
+                font-size: $font-24;
+                font-style: initial;
+                align-self: flex-end;
+                margin-bottom: -0.2vw;
+                font-weight: 500;
+                margin-left: 0.2vw;
+                margin-right: 0.2vw;
+                @media all and (max-width: 1024px) {
+                  font-size: 4.5vw;
+                }
+              }
+
+              .date {
+                font-size: $font-24;
+                margin-bottom: -0.2vw;
+                font-style: initial;
+                align-self: flex-end;
+                font-weight: 500;
+                margin-left: 0.2vw;
+                @media all and (max-width: 1024px) {
+                  font-size: 4.5vw;
+                }
+              }
+            }
+
+            .title {
+              color: #3b3b3b;
+              font-size: $font-20;
+              font-family: "Noto Serif TC";
+              font-weight: 600;
+              letter-spacing: 0.15em;
+              transition: 0.4s ease-in-out;
+
+              @media all and (max-width: 1024px) {
+                font-size: $content;
+              }
+            }
+          }
+        }
+
+        .more-btn-box {
+          display: flex;
+          justify-content: center;
+          margin-top: 3vw;
+          @media all and (max-width: 1024px) {
+            display: none;
+          }
+          .more-btn {
+            display: flex;
+            border: 1px solid #ddb57c;
+            padding: 0.25vw 1vw;
+            border-radius: 0.3vw;
+            &:hover {
+              img {
+                transform: translateX(0.5vw);
+              }
+            }
+            .more {
+              color: #ddb57c;
+              letter-spacing: 0.15em;
+              font-family: "Jost";
+              font-size: $font-18;
+              font-weight: bold;
+              border: none;
+              margin-right: 0.3vw;
+            }
+            img {
+              width: 0.9vw;
+              transition: 0.4s ease-in-out;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 275.17 194.7">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: .75px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #ddb57c;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke-width: .9px;
+      }
+    </style>
+  </defs>
+  <g id="content">
+    <g>
+      <rect class="cls-2" x="151.66" y="49.23" width="30.88" height="30.88" transform="translate(94.67 -99.21) rotate(45)"/>
+      <rect class="cls-2" x="156.77" y="73.78" width="20.65" height="20.65" transform="translate(108.41 -93.52) rotate(45)"/>
+    </g>
+    <polyline class="cls-1" points="275.17 194.32 .38 194.32 .38 0"/>
+  </g>
+</svg>

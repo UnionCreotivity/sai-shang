@@ -1,0 +1,306 @@
+.projects-video-body {
+  display: flex;
+  width: 100%;
+  position: relative;
+  flex-direction: column;
+  background-image: url(../images/bg.webp);
+  background-size: contain;
+
+  .top-banner-box {
+    padding-top: 3vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    height: 29.8vw;
+    @media all and (max-width: 1024px) {
+      overflow: hidden;
+      height: 56.5vw;
+    }
+    @media all and (max-width: 500px) {
+      height: 59vw;
+    }
+    .top-banner {
+      width: 100%;
+      @media all and (max-width: 1024px) {
+        margin-top: -10vw;
+      }
+      @media all and (max-width: 500px) {
+        margin-top: -7vw;
+      }
+    }
+    .item1 {
+      position: absolute;
+      left: 30vw;
+      bottom: 0vw;
+      width: 38vw;
+      @media all and (max-width: 1024px) {
+        left: -10vw;
+        bottom: -3.5vw;
+        width: 89vw;
+      }
+    }
+
+    .item2 {
+      position: absolute;
+      right: 19vw;
+      top: 9vw;
+      width: 5vw;
+      @media all and (max-width: 1024px) {
+        right: 16vw;
+        top: 23vw;
+        width: 11vw;
+      }
+    }
+
+    .frame {
+      width: 32vw;
+      position: absolute;
+      top: 56%;
+      left: 50%;
+      transform: translate(-50%, -50%) scaleX(-1);
+      @media all and (max-width: 1024px) {
+        width: 80vw;
+        top: 58%;
+      }
+
+      @media all and (max-width: 500px) {
+        top: 61%;
+      }
+    }
+
+    .main-title-box {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 52%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      text-align: center;
+      @media all and (max-width: 1024px) {
+        top: 55%;
+      }
+      @media all and (max-width: 500px) {
+        top: 58%;
+      }
+      .main-title-zh {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 2vw;
+        margin-bottom: 0.5vw;
+        @include bannerZHTitle();
+        position: relative;
+        @media all and (max-width: 1024px) {
+          margin-left: -3vw;
+        }
+        &::after {
+          position: absolute;
+          content: "+";
+          top: 0vw;
+          height: 1px;
+          right: -1.8vw;
+          @media all and (max-width: 1024px) {
+            right: -5vw;
+          }
+        }
+      }
+
+      .main-title-en {
+        position: relative;
+        @include bannerENTitle();
+        text-align: center;
+        &::before {
+          position: absolute;
+          content: "";
+          background-color: white;
+          width: 35%;
+          top: 0.5vw;
+          height: 1px;
+          left: -2.5vw;
+          @media all and (max-width: 1024px) {
+            width: 22%;
+            top: 2vw;
+            left: -5vw;
+          }
+        }
+        &::after {
+          position: absolute;
+          content: "";
+          background-color: white;
+          width: 35%;
+          top: 0.5vw;
+          height: 1px;
+          right: -2.5vw;
+          @media all and (max-width: 1024px) {
+            width: 22%;
+            top: 2vw;
+            right: -4.8vw;
+          }
+        }
+      }
+    }
+  }
+
+  .page-container {
+    display: flex;
+    position: relative;
+    padding-top: 5vw;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 8vw;
+    @media all and (max-width: 1024px) {
+      flex-direction: column;
+    }
+    .left-nav-box {
+      position: absolute;
+      left: 7vw;
+      top: 6vw;
+      font-family: "Noto Serif TC";
+      letter-spacing: 0.25em;
+      font-size: $font-20;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      font-weight: 600;
+      @media all and (max-width: 1024px) {
+        position: relative;
+        top: initial;
+        left: initial;
+        font-size: 4.3vw;
+        flex-direction: row;
+        margin-top: 6vw;
+        margin-bottom: 10vw;
+        align-self: center;
+      }
+      &:first-child {
+        border-top: 1px solid #e2e2e2;
+        @media all and (max-width: 1024px) {
+          border-top: none;
+          border-left: 1px solid #bcbcbc;
+        }
+      }
+      .nav {
+        padding: 0.8vw 0.5vw;
+        border-bottom: 1px solid #e2e2e2;
+        @media all and (max-width: 1024px) {
+          border-bottom: none;
+          padding: 1vw 3vw;
+          border-right: 1px solid #bcbcbc;
+        }
+      }
+      a {
+        color: #ad8e5c;
+      }
+      .nav-active {
+        color: #3b3b3b !important;
+        background-color: #ffffff;
+      }
+    }
+
+    .content-box {
+      display: flex;
+      flex-direction: column;
+      margin-left: 7vw;
+      @media all and (max-width: 1024px) {
+        margin-left: 0vw;
+      }
+      .video-item {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5vw;
+        @media all and (max-width: 1024px) {
+          margin-bottom: 9vw;
+        }
+
+        .video-box {
+          @media all and (max-width: 1024px) {
+            display: flex;
+            justify-content: center;
+          }
+          iframe {
+            width: 40vw;
+            height: 22vw;
+            border-radius: 1vw;
+            @media all and (max-width: 1024px) {
+              width: 88vw;
+              height: 49vw;
+              border-radius: 3vw;
+            }
+          }
+        }
+        .video-title {
+          display: flex;
+          margin-top: 2vw;
+          margin-bottom: 2vw;
+          justify-content: center;
+          @media all and (max-width: 1024px) {
+            margin-top: 5vw;
+            margin-bottom: 4vw;
+          }
+          .order {
+            color: #ddb57c;
+            font-family: "Jost";
+            font-weight: 500;
+            font-size: $font-18;
+            align-self: center;
+            margin-right: 0.3vw;
+            letter-spacing: 0.1em;
+            @media all and (max-width: 1024px) {
+              font-size: 3.5vw;
+            }
+          }
+          .title {
+            color: #aa7744;
+            font-family: "Noto Serif TC";
+            font-weight: 600;
+            font-size: $font-24;
+            letter-spacing: 0.2em;
+            @media all and (max-width: 1024px) {
+              font-size: 4.3vw;
+            }
+          }
+        }
+
+        .content {
+          @include pageContent();
+          @media all and (max-width: 1024px) {
+            display: none;
+          }
+        }
+
+        .content-mobile {
+          display: none;
+          @include pageContent();
+          @media all and (max-width: 1024px) {
+            display: flex;
+          }
+        }
+      }
+    }
+
+    .top-btn {
+      position: absolute;
+      bottom: 4vw;
+      right: 7vw;
+      width: 3vw;
+      cursor: pointer;
+      transition: 0.4s ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      @media all and (max-width: 1024px) {
+        width: 13vw;
+        margin-top: 6vw;
+        position: initial;
+        bottom: initial;
+        right: initial;
+        align-self: center;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}

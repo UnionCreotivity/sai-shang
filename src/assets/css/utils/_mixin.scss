@@ -1,0 +1,84 @@
+@mixin bannerZHTitle() {
+  font-family: "Noto Serif TC";
+  font-size: $font-30;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 0.2em;
+  @media all and (max-width: 1024px) {
+    font-size: $zh-title;
+    letter-spacing: 0.3em;
+  }
+}
+@mixin bannerENTitle() {
+  font-family: "Jost";
+  font-size: $font-18;
+  color: #f9c88f;
+  letter-spacing: 0.15em;
+
+  @media all and (max-width: 1024px) {
+    font-size: 3vw;
+  }
+}
+
+@mixin pageContentTitleIcon() {
+  position: absolute;
+  top: -1.3vw;
+  left: -2vw;
+  width: 2vw;
+  @media all and (max-width: 1024px) {
+    width: 6.5vw;
+    top: -3.3vw;
+    left: -8vw;
+  }
+}
+
+@mixin pageContentZHTitle() {
+  font-family: "Noto Serif TC";
+  color: #3b3b3b;
+  font-weight: bold;
+  font-size: $font-30;
+  position: relative;
+  text-align: center;
+  margin-bottom: 0.4vw;
+  letter-spacing: 0.2em;
+  display: flex;
+  flex-direction: column;
+  @media all and (max-width: 1024px) {
+    font-size: $zh-title;
+    flex-direction: column;
+    align-self: center;
+  }
+}
+
+@mixin pageContentENTitle() {
+  font-family: "Jost";
+  font-size: $font-18;
+  align-content: center;
+  font-weight: 500;
+  color: #b2b2b2;
+  text-align: center;
+  letter-spacing: 0.08em;
+  @media all and (max-width: 1024px) {
+    font-size: $en-title;
+    margin-left: 0vw;
+    align-self: center;
+  }
+}
+
+@mixin pageContent() {
+  font-family: "Noto Serif TC";
+  color: #3b3b3b;
+  font-weight: 500;
+  font-size: $font-20;
+  text-align: center;
+  letter-spacing: 0.15em;
+  line-height: 2.3;
+
+  @media all and (max-width: 1024px) {
+    font-size: $content;
+    width: 88%;
+    line-height: 2.15;
+    align-self: center;
+    text-align: justify;
+  }
+}

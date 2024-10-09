@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80.74 80.74">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: .17em;
+      }
+
+      .cls-2 {
+        opacity: .2;
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+        stroke: #b2b2b2;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4 {
+        letter-spacing: .18em;
+      }
+
+      .cls-5 {
+        fill: #606060;
+        font-size: 14px;
+      }
+
+      .cls-6 {
+        letter-spacing: .2em;
+      }
+    </style>
+  </defs>
+  <g id="content">
+    <g>
+      <path class="cls-3" d="M75.88,22.22c2.79,5.45,4.36,11.62,4.36,18.16,0,22.02-17.85,39.87-39.87,39.87S.5,62.39,.5,40.37,18.35,.5,40.37,.5c7.54,0,14.6,2.1,20.61,5.74"/>
+      <path class="cls-2" d="M60.98,6.24c6.33,3.83,11.51,9.37,14.89,15.98"/>
+      <text class="cls-5" transform="translate(19.21 46.72)"><tspan class="cls-4" x="0" y="0">B</tspan><tspan class="cls-1" x="10.4" y="0">A</tspan><tspan class="cls-6" x="22.02" y="0">CK</tspan></text>
+    </g>
+  </g>
+</svg>
