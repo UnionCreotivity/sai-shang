@@ -53,13 +53,16 @@ window.onload = function () {
 
     const bannerSwiper = new Swiper(".banner-swiper", {
         loop: true,
-        speed: 1500,
-        effect: 'fade',
-
-        fadeEffect: {
-            crossFade: true,
+        speed: 2000,
+        autoplay: true,
+        // effect: 'fade',
+        // fadeEffect: {
+        //     crossFade: true,
+        // },
+        navigation: {
+            nextEl: ".banner-swiper-next",
+            prevEl: ".banner-swiper-prev",
         },
-
     });
 
     const productSwiper = new Swiper(".product-swiper", {

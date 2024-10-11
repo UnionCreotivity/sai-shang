@@ -13,6 +13,9 @@
     position: relative;
     overflow: hidden;
     height: 30vw;
+    @media all and (max-width: 1024px) {
+      height: initial;
+    }
     .top-banner {
       width: 100%;
       @media all and (max-width: 1024px) {
@@ -56,7 +59,7 @@
 
       @media all and (max-width: 1024px) {
         width: 80vw;
-        top: 58%;
+        top: 59.5%;
       }
     }
     .main-title-box {
@@ -81,6 +84,9 @@
         margin-top: 2vw;
         margin-bottom: 0.5vw;
         @include bannerZHTitle();
+        @media all and (max-width: 1024px) {
+          margin-top: 3vw;
+        }
       }
 
       .main-title-en {
@@ -176,7 +182,7 @@
         border-bottom: 1px solid #e2e2e2;
         @media all and (max-width: 1024px) {
           border-bottom: none;
-          padding: 1vw 3vw;
+          padding: 1.5vw 3vw;
           border-right: 1px solid #bcbcbc;
         }
       }
@@ -194,7 +200,7 @@
       flex-direction: column;
       position: relative;
       align-self: center;
-      margin-bottom: 2vw;
+      margin-bottom: 3vw;
 
       @media all and (max-width: 1024px) {
         margin-bottom: 8vw;

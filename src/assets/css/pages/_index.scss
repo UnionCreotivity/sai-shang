@@ -18,6 +18,7 @@
       .banner-swiper {
         width: 100%;
         overflow: hidden;
+        position: relative;
         .swiper-wrapper {
           width: 100%;
           .swiper-slide {
@@ -29,6 +30,28 @@
             img {
               width: 100vw;
             }
+          }
+        }
+        .swiper-prev {
+          position: absolute;
+          left: 3vw;
+          z-index: 30;
+          top: 15vw;
+          cursor: pointer;
+          padding: 1vw;
+          img {
+            width: 0.8vw;
+          }
+        }
+        .swiper-next {
+          z-index: 30;
+          right: 3vw;
+          top: 15vw;
+          padding: 1vw;
+          position: absolute;
+          cursor: pointer;
+          img {
+            width: 0.8vw;
           }
         }
       }
@@ -178,6 +201,7 @@
           }
           div {
             @include pageContentENTitle();
+            margin-left: 0.6vw;
           }
         }
         .content {
@@ -389,6 +413,9 @@
           &:hover {
             img {
               transform: scale(1.1);
+              @media all and (max-width: 1024px) {
+                transform: inherit;
+              }
             }
           }
 
@@ -452,6 +479,9 @@
         &:hover {
           img {
             transform: translateX(0.5vw);
+            @media all and (max-width: 1024px) {
+              transform: inherit;
+            }
           }
         }
         @media all and (max-width: 1024px) {
@@ -573,6 +603,9 @@
             &:hover {
               .title {
                 color: #d1a371;
+                @media all and (max-width: 1024px) {
+                  color: inherit;
+                }
               }
             }
 
@@ -660,6 +693,9 @@
             &:hover {
               img {
                 transform: translateX(0.5vw);
+                @media all and (max-width: 1024px) {
+                  transform: inherit;
+                }
               }
             }
             .more {

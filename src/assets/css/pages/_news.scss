@@ -13,6 +13,11 @@
     position: relative;
     overflow: hidden;
     height: 30vw;
+
+    @media all and (max-width: 1024px) {
+      height: initial;
+    }
+
     .top-banner {
       width: 100%;
       @media all and (max-width: 1024px) {
@@ -52,6 +57,10 @@
         top: 58%;
         transform: translate(-50%, -50%) scaleX(1);
       }
+
+      @media all and (max-width: 500px) {
+        top: 59.5%;
+      }
     }
     .main-title-box {
       display: flex;
@@ -75,6 +84,9 @@
         margin-top: 2vw;
         margin-bottom: 0.5vw;
         @include bannerZHTitle();
+        @media all and (max-width: 1024px) {
+          margin-top: 3vw;
+        }
       }
 
       .main-title-en {
@@ -120,6 +132,10 @@
     padding-bottom: 7vw;
     flex-direction: column;
 
+    @media all and (max-width: 1024px) {
+      padding-top: 5vw;
+    }
+
     .left-nav-box {
       position: absolute;
       left: 8vw;
@@ -133,11 +149,30 @@
       font-weight: 600;
       z-index: 30;
       cursor: pointer;
+      @media all and (max-width: 1024px) {
+        position: relative;
+        top: initial;
+        left: initial;
+        font-size: 4.3vw;
+        flex-direction: row;
+        margin-top: 6vw;
+        margin-bottom: 10vw;
+        align-self: center;
+      }
       .nav {
         padding: 0.8vw 0.5vw;
         border-bottom: 1px solid #e2e2e2;
         &:first-child {
           border-top: 1px solid #e2e2e2;
+          @media all and (max-width: 1024px) {
+            border-top: none;
+            border-left: 1px solid #bcbcbc;
+          }
+        }
+        @media all and (max-width: 1024px) {
+          border-bottom: none;
+          padding: 1.5vw 3vw;
+          border-right: 1px solid #bcbcbc;
         }
       }
       a {
@@ -155,6 +190,7 @@
       margin: 0 auto;
       width: 100%;
       align-items: center;
+
       .item-box {
         display: flex;
         width: 55%;
@@ -162,40 +198,77 @@
         border-bottom: 1px solid #b2b2b2;
         padding-bottom: 1vw;
         margin-bottom: 1vw;
+        @media all and (max-width: 1024px) {
+          flex-direction: column;
+          border-bottom: none;
+          width: 88%;
+          margin-bottom: 10vw;
+        }
         &:hover {
           .left-box {
             .title {
               color: #d1a371;
+              @media all and (max-width: 1024px) {
+                color: inherit;
+              }
             }
           }
           .right-box {
             img {
               transform: scale(1.2);
+              @media all and (max-width: 1024px) {
+                transform: inherit;
+              }
             }
           }
         }
         &:first-child {
           border-top: 1px solid #b2b2b2;
           padding-top: 1vw;
+          @media all and (max-width: 1024px) {
+            border-top: none;
+          }
         }
 
         .left-box {
           display: flex;
           flex-direction: column;
+
           .sort-date-box {
             display: flex;
-            .sort {
-              background-color: #d1a371;
-              font-family: "Noto Serif TC";
-              font-weight: 600;
-              letter-spacing: 0.2em;
-              font-size: $font-18;
-              color: white;
-              border-radius: 0.35vw;
-              padding: 0.3vw;
-              padding-left: 0.7vw;
-              padding-bottom: 0.35vw;
+            @media all and (max-width: 1024px) {
+              flex-direction: column;
+              margin-bottom: 1vw;
             }
+            .sort-box {
+              @media all and (max-width: 1024px) {
+                display: flex;
+              }
+              .sort {
+                background-color: #d1a371;
+                font-family: "Noto Serif TC";
+                font-weight: 600;
+                letter-spacing: 0.2em;
+                font-size: $font-18;
+                color: white;
+                border-radius: 0.35vw;
+                padding: 0.3vw;
+                padding-left: 0.7vw;
+                padding-bottom: 0.35vw;
+                @media all and (max-width: 1024px) {
+                  font-size: 3.3vw;
+                  padding: 1.8vw;
+                  padding-bottom: 2vw;
+                  padding-left: 3vw;
+                  padding-right: 2.9vw;
+                  display: flex;
+                  border-radius: 1.2vw;
+                  font-weight: initial;
+                  margin-bottom: 3vw;
+                }
+              }
+            }
+
             .date {
               color: #b2b2b2;
               font-family: "Jost";
@@ -203,6 +276,10 @@
               letter-spacing: 0.15em;
               font-size: $font-18;
               margin-left: 1vw;
+              @media all and (max-width: 1024px) {
+                font-size: 3.8vw;
+                align-self: self-start;
+              }
             }
           }
           .title {
@@ -213,6 +290,11 @@
             letter-spacing: 0.2em;
             margin-top: 1vw;
             transition: 0.4s ease-in-out;
+            @media all and (max-width: 1024px) {
+              font-size: 4.25vw;
+              letter-spacing: 0.25em;
+              margin-bottom: 4vw;
+            }
           }
         }
 
@@ -222,7 +304,9 @@
           width: 12vw;
           overflow: hidden;
           border-radius: 1.2vw;
-
+          @media all and (max-width: 1024px) {
+            width: 88vw;
+          }
           img {
             width: 100%;
             transition: 0.5s ease-in-out;
@@ -236,6 +320,9 @@
       justify-content: center;
       align-items: center;
       margin-top: 4vw;
+      @media all and (max-width: 1024px) {
+        margin-top: 0vw;
+      }
       button {
         padding: 0.3vw 0.6vw;
         border: none;
@@ -246,6 +333,11 @@
         border-radius: 50%;
         cursor: pointer;
         transition: 0.4s ease-in-out;
+        @media all and (max-width: 1024px) {
+          font-size: 3.8vw;
+          padding: 0.5vw 1.6vw;
+          font-weight: 500;
+        }
       }
     }
 
@@ -253,6 +345,10 @@
       &:hover {
         background-color: #ffc8007a;
         color: #3b3b3b;
+        @media all and (max-width: 1024px) {
+          background-color: inherit;
+          color: inherit;
+        }
       }
     }
     .pagination .active {
@@ -269,6 +365,21 @@
       transition: 0.4s ease-in-out;
       &:hover {
         transform: scale(1.1);
+        @media all and (max-width: 1024px) {
+          transform: inherit;
+        }
+      }
+
+      @media all and (max-width: 1024px) {
+        width: 13vw;
+        margin-top: 15vw;
+        position: initial;
+        bottom: initial;
+        right: initial;
+        margin-bottom: 4vw;
+        align-self: center;
+        display: flex;
+        justify-content: center;
       }
     }
   }
