@@ -18,6 +18,10 @@
       padding-top: 8vw;
       position: relative;
       padding-bottom: 5vw;
+      @media all and (max-width: 1024px) {
+        padding-top: 17vw;
+        width: 88%;
+      }
       .sort-box {
         display: flex;
         margin-bottom: 1vw;
@@ -32,6 +36,16 @@
           padding: 0.3vw;
           padding-left: 0.6vw;
           padding-bottom: 0.35vw;
+          @media all and (max-width: 1024px) {
+            font-size: 3.3vw;
+            padding: 1.8vw;
+            padding-bottom: 2vw;
+            padding-left: 3vw;
+            padding-right: 2.9vw;
+            border-radius: 1.2vw;
+            font-weight: initial;
+            margin-bottom: 3vw;
+          }
         }
       }
 
@@ -42,14 +56,27 @@
         font-weight: bold;
         font-size: $font-28;
         margin-bottom: 3vw;
+        @media all and (max-width: 1024px) {
+          font-size: 4.25vw;
+          letter-spacing: 0.25em;
+          margin-bottom: 6vw;
+          line-height: 1.7;
+        }
       }
 
       .main-img-box {
         display: flex;
         width: 100%;
+        @media all and (max-width: 1024px) {
+          // width: 88%;
+          overflow: hidden;
+        }
 
         img {
-          width: 100%;
+          width: 50vw;
+          @media all and (max-width: 1024px) {
+            width: 88vw;
+          }
         }
       }
 
@@ -57,16 +84,25 @@
         display: flex;
         width: 100%;
         margin-top: 3vw;
-
         padding-bottom: 10vw;
+        @media all and (max-width: 1024px) {
+          flex-direction: column;
+          padding-bottom: 20vw;
+        }
         .left-box {
           display: flex;
           flex-direction: column;
           width: 30%;
-
+          @media all and (max-width: 1024px) {
+            width: 100%;
+          }
           .date-box {
             display: flex;
             margin-bottom: 1vw;
+            @media all and (max-width: 1024px) {
+              padding-bottom: 3vw;
+              border-bottom: 1px solid #b2b2b2;
+            }
             .date-title {
               font-family: "Noto Serif TC";
               color: #3b3b3b;
@@ -75,6 +111,10 @@
               font-weight: 500;
               align-self: center;
               margin-right: 0.7vw;
+              @media all and (max-width: 1024px) {
+                font-size: $content;
+                margin-right: 3vw;
+              }
             }
             .date {
               font-family: "Jost";
@@ -82,19 +122,33 @@
               color: #b2b2b2;
               align-self: center;
               letter-spacing: 0.15em;
+              @media all and (max-width: 1024px) {
+                font-size: 4.1vw;
+                margin-bottom: -0.5vw;
+              }
             }
           }
 
           .link-box {
             display: flex;
             width: 100%;
-
+            @media all and (max-width: 1024px) {
+              padding-top: 2.5vw;
+              padding-bottom: 2.5vw;
+              border-bottom: 1px solid #b2b2b2;
+            }
             .link-icon {
               margin-right: 0.5vw;
               // margin-top: 0.3vw;
               align-self: center;
+              @media all and (max-width: 1024px) {
+                margin-right: 3vw;
+              }
               img {
                 width: 1vw;
+                @media all and (max-width: 1024px) {
+                  width: 5.5vw;
+                }
               }
             }
 
@@ -112,7 +166,10 @@
               flex-wrap: wrap;
               transition: 0.2s ease-in-out;
               display: flex;
-
+              @media all and (max-width: 1024px) {
+                font-size: 3.8vw;
+                width: 100%;
+              }
               &::after {
                 position: absolute;
                 content: "";
@@ -121,18 +178,15 @@
                 height: 1px;
                 bottom: 0px;
                 left: 0px;
+                @media all and (max-width: 1024px) {
+                  display: none;
+                }
               }
 
               &:hover {
                 color: #3b3b3b;
-                @media all and (max-width: 1024px) {
-                  color: inherit;
-                }
                 &::after {
                   background-color: #3b3b3b;
-                  @media all and (max-width: 1024px) {
-                    background-color: inherit;
-                  }
                 }
               }
             }
@@ -147,6 +201,12 @@
           letter-spacing: 0.15em;
           line-height: 2;
           margin-left: 2vw;
+          @media all and (max-width: 1024px) {
+            margin-left: 0vw;
+            padding-top: 5vw;
+            width: 100%;
+            font-size: $content;
+          }
         }
       }
 
@@ -163,17 +223,30 @@
           padding-bottom: 1vw;
           margin-bottom: 3vw;
           border-bottom: 1px solid #b2b2b2;
+          @media all and (max-width: 1024px) {
+            font-size: $zh-title;
+            padding-bottom: 3vw;
+            margin-bottom: 7vw;
+          }
         }
 
         .article-box {
           display: flex;
           width: 100%;
           justify-content: space-between;
+          @media all and (max-width: 1024px) {
+            flex-direction: column;
+          }
           .item {
             display: flex;
             flex-direction: column;
             width: 17.5vw;
-
+            @media all and (max-width: 1024px) {
+              flex-direction: row;
+              margin-bottom: 5vw;
+              justify-content: space-between;
+              width: 100%;
+            }
             .img-box {
               display: flex;
               flex-direction: column;
@@ -181,35 +254,53 @@
               width: 100%;
               overflow: hidden;
               border-radius: 1.3vw;
-
+              @media all and (max-width: 1024px) {
+                width: 47%;
+              }
               img {
                 width: 100%;
                 transition: 0.8s ease-in-out;
               }
             }
 
-            .title {
-              font-size: $font-22;
-              text-align: justify;
-              margin-top: 1vw;
-              line-height: 2;
-              margin-bottom: 1vw;
-              transition: 0.8s ease-in-out;
-            }
+            .bottom-content {
+              @media all and (max-width: 1024px) {
+                display: flex;
+                width: 52%;
+                padding-left: 3vw;
+                flex-direction: column;
+                justify-content: space-evenly;
+              }
+              .title {
+                font-size: $font-22;
+                text-align: justify;
+                margin-top: 1vw;
+                line-height: 2;
+                margin-bottom: 1vw;
+                transition: 0.8s ease-in-out;
+                @media all and (max-width: 1024px) {
+                  font-size: $content;
+                  letter-spacing: 0.1em;
+                  font-weight: 500;
+                  margin-top: 0vw;
+                  margin-bottom: 0vw;
+                }
+              }
 
-            .date {
-              color: #b2b2b2;
-              font-size: $font-18;
-              font-weight: 500;
-              letter-spacing: 0.2em;
+              .date {
+                color: #b2b2b2;
+                font-size: $font-18;
+                font-weight: 500;
+                letter-spacing: 0.2em;
+                @media all and (max-width: 1024px) {
+                  font-size: 4.1vw;
+                }
+              }
             }
 
             &:hover {
               .title {
                 color: #93725c;
-                @media all and (max-width: 1024px) {
-                  color: inherit;
-                }
               }
 
               .img-box {
@@ -235,6 +326,18 @@
           @media all and (max-width: 1024px) {
             transform: inherit;
           }
+        }
+
+        @media all and (max-width: 1024px) {
+          width: 13vw;
+          margin-top: 15vw;
+          position: initial;
+          bottom: initial;
+          right: initial;
+          margin-bottom: 9vw;
+          align-self: center;
+          display: flex;
+          justify-content: center;
         }
       }
     }

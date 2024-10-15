@@ -203,7 +203,6 @@
           justify-content: space-between;
           margin-bottom: 3vw;
           @media all and (max-width: 1024px) {
-            flex-direction: column;
             align-self: center;
           }
           .icon {
@@ -223,7 +222,7 @@
           .icon-2 {
             margin-right: 0vw;
             @media all and (max-width: 1024px) {
-              margin-top: 3vw;
+              margin-left: 3vw;
             }
           }
         }

@@ -51,4 +51,20 @@ window.onload = function () {
     };
     menuClick();
 
+    if (window_width <= 1024) {
+
+        const contents = document.querySelectorAll('.bottom-content .title');
+        const maxLength = 15;
+
+        contents.forEach(content => {
+            const originalText = content.innerText;
+
+            if (originalText.length > maxLength) {
+                const truncatedText = originalText.substring(0, maxLength) + '...';
+                content.innerText = truncatedText;
+            }
+        });
+
+    }
+
 };

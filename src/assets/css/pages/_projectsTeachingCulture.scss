@@ -97,6 +97,7 @@
         position: relative;
         @media all and (max-width: 1024px) {
           margin-left: -3vw;
+          margin-top: 3vw;
         }
         &::after {
           position: absolute;
@@ -323,7 +324,7 @@
       margin-top: 0vw;
       display: none;
       @media all and (max-width: 1024px) {
-        display: block;
+        display: flex;
       }
       button {
         padding: 0.3vw 0.6vw;

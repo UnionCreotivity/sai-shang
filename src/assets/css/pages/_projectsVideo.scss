@@ -94,7 +94,9 @@
         position: relative;
         @media all and (max-width: 1024px) {
           margin-left: -3vw;
+          margin-top: 3vw;
         }
+
         &::after {
           position: absolute;
           content: "+";

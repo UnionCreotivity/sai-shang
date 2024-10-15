@@ -96,6 +96,9 @@
         margin-top: 2vw;
         margin-bottom: 0.5vw;
         @include bannerZHTitle();
+        @media all and (max-width: 1024px) {
+          margin-top: 3vw;
+        }
       }
 
       .main-title-en {
