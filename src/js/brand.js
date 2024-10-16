@@ -60,7 +60,7 @@ window.onload = function () {
         loadingText.textContent = percent + "%";
         percent++;
         if (percent <= 100) {
-            setTimeout(updateProgress, 8);
+            setTimeout(updateProgress, 5);
         } else {
 
             let tl = gsap.timeline({});
