@@ -8,3 +8,94 @@
 body {
   position: relative;
 }
+
+.loading-screen {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 9999999;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  @media all and (max-width: 500px) {
+    height: calc(var(--loadingvh, 1vh) * 99);
+  }
+
+  .logo-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 5vw;
+
+    @media all and (max-width: 500px) {
+      margin-bottom: 33vw;
+    }
+    @mixin same-size($sz) {
+      width: $sz;
+      height: $sz;
+    }
+    .loader__wrap {
+      @include same-size(100%);
+      display: flex;
+      z-index: 1;
+      margin-bottom: 1vw;
+
+      @media all and (max-width: 500px) {
+        margin-bottom: 5vw;
+      }
+    }
+    @keyframes vertical-rotate {
+      0% {
+        transform: rotateY(0deg);
+      }
+      100% {
+        transform: rotateY(360deg);
+      }
+    }
+    .logo {
+      width: 2.7vw;
+      // animation: vertical-rotate 1s infinite linear;
+
+      @media all and (max-width: 1440px) {
+        width: 3.5vw;
+      }
+      @media all and (max-width: 1024px) {
+        width: 12vw;
+      }
+    }
+
+    .loading-text {
+      display: flex;
+      justify-content: center;
+      font-family: "Noto Serif TC";
+      align-items: center;
+      letter-spacing: 0.1em;
+      font-weight: 600;
+      font-size: 1vw;
+
+      padding-left: 0vw;
+      color: #555757;
+      margin-top: 0.5vw;
+      @media all and (max-width: 1440px) {
+        font-size: 1.1vw;
+      }
+
+      @media all and (max-width: 1024px) {
+        font-size: 3.2vw;
+        margin-top: 1vw;
+      }
+
+      @media all and (max-width: 500px) {
+        font-size: 5vw;
+      }
+    }
+  }
+}

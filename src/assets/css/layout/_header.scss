@@ -19,10 +19,10 @@ header {
     padding-right: 4vw;
   }
   @media all and (max-width: 500px) {
-    padding-left: 6vw;
-    padding-top: 3.5vw;
-    padding-bottom: 3.5vw;
-    padding-right: 6vw;
+    padding-left: 5vw;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    padding-right: 4vw;
   }
   .logo-box {
     display: flex;
@@ -155,7 +155,7 @@ header {
   .menu {
     display: flex;
     flex-direction: column;
-    padding-top: 18vw;
+    padding-top: 30vw;
     .link-item-box {
       display: flex;
       align-self: center;
@@ -171,7 +171,7 @@ header {
           color: #9e7c4a;
           font-family: "Noto Serif TC";
           letter-spacing: 0.2em;
-          font-size: 3.8vw;
+          font-size: 4.2vw;
           margin-bottom: 0.15vw;
           font-weight: 500;
         }

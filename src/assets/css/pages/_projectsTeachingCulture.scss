@@ -313,6 +313,10 @@
               right: 3vw;
               bottom: 3vw;
             }
+            @media all and (max-width: 500px) {
+              right: 4vw;
+              bottom: 4.5vw;
+            }
           }
         }
       }

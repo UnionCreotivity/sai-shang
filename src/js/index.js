@@ -101,26 +101,67 @@ window.onload = function () {
     }
     newsTitleOverflow();
 
+    let loadingScreen = document.querySelector(".loading-screen");
+    let loadingText = document.getElementById("loading-text");
+    let percent = 1;
+
+    function updateProgress() {
+
+        loadingText.textContent = percent + "%";
+        percent++;
+        if (percent <= 100) {
+            setTimeout(updateProgress, 8);
+        } else {
+
+            let tl = gsap.timeline({});
+            tl.to(loadingScreen, { duration: 1, opacity: 0, ease: "power1.inOut" })
+                .to(loadingScreen, { duration: 1.2, display: 'none', })
+
+            c2Ani();
+        }
+
+    }
+    updateProgress();
 
     function c2Ani() {
-        let tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: '.card1',
-                start: 'top center',
-            }
-        });
+        if (window_width <= 1024) {
+            let tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: '.card2',
+                    start: 'top center',
+                }
+            });
 
-        tl.from('.card2 .left-box .img-box,.card2 .left-box .content-box,.card2 .right-box', {
-            duration: 1,
-            opacity: 0,
-            ease: 'power0.in',
-            stagger: {
-                each: 0.15,
-                from: 'start'
-            }
-        })
+            tl.from('.card2 .left-box .img-box,.card2 .left-box .content-box,.card2 .right-box', {
+                duration: 1,
+                opacity: 0,
+                ease: 'power0.in',
+                stagger: {
+                    each: 0.15,
+                    from: 'start'
+                }
+            })
+        } else {
+            let tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: '.card1',
+                    start: 'top center',
+                }
+            });
+
+            tl.from('.card2 .left-box .img-box,.card2 .left-box .content-box,.card2 .right-box', {
+                duration: 1,
+                opacity: 0,
+                ease: 'power0.in',
+                stagger: {
+                    each: 0.2,
+                    from: 'start'
+                }
+            })
+        }
+
     }
-    c2Ani();
+    // c2Ani();
 
     function c3Ani() {
         let tl = gsap.timeline({
@@ -136,7 +177,7 @@ window.onload = function () {
             opacity: 0,
             ease: 'power0.in',
             stagger: {
-                each: 0.15,
+                each: 0.2,
                 from: 'start'
             }
         })
@@ -148,6 +189,7 @@ window.onload = function () {
             scrollTrigger: {
                 trigger: '.card4',
                 start: '-25% center',
+
             }
         });
 
@@ -156,7 +198,7 @@ window.onload = function () {
             opacity: 0,
             ease: 'power0.in',
             stagger: {
-                each: 0.15,
+                each: 0.2,
                 from: 'start'
             }
         })
