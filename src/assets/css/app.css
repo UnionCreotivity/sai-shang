@@ -1323,7 +1323,7 @@ footer .right-box .link-item-box .link-item {
 }
 @media all and (max-width: 1024px) {
   .index-body .card4 .all-content-box .right-box .news-box .news-item:hover .title {
-    color: inherit;
+    color: #3b3b3b;
   }
 }
 .index-body .card4 .all-content-box .right-box .news-box .news-item:first-child {
@@ -1556,7 +1556,7 @@ footer .right-box .link-item-box .link-item {
 }
 @media all and (max-width: 1024px) {
   .about-body .top-banner-box .main-title-box .main-title-zh {
-    margin-top: 3vw;
+    margin-top: 4vw;
   }
 }
 .about-body .top-banner-box .main-title-box .main-title-en {
@@ -2557,7 +2557,7 @@ footer .right-box .link-item-box .link-item {
 }
 @media all and (max-width: 1024px) {
   .events-history-body .top-banner-box .main-title-box .main-title-zh {
-    margin-top: 3vw;
+    margin-top: 4vw;
   }
 }
 .events-history-body .top-banner-box .main-title-box .main-title-en {
@@ -3560,7 +3560,7 @@ footer .right-box .link-item-box .link-item {
 }
 @media all and (max-width: 1024px) {
   .product-body .top-banner-box .main-title-box .main-title-zh {
-    margin-top: 3vw;
+    margin-top: 4vw;
   }
 }
 .product-body .top-banner-box .main-title-box .main-title-en {
@@ -4521,7 +4521,7 @@ footer .right-box .link-item-box .link-item {
 @media all and (max-width: 1024px) {
   .projects-video-body .top-banner-box .main-title-box .main-title-zh {
     margin-left: -3vw;
-    margin-top: 3vw;
+    margin-top: 4vw;
   }
 }
 .projects-video-body .top-banner-box .main-title-box .main-title-zh::after {
@@ -4929,7 +4929,7 @@ footer .right-box .link-item-box .link-item {
 @media all and (max-width: 1024px) {
   .projects-teaching-culture-body .top-banner-box .main-title-box .main-title-zh {
     margin-left: -3vw;
-    margin-top: 3vw;
+    margin-top: 4vw;
   }
 }
 .projects-teaching-culture-body .top-banner-box .main-title-box .main-title-zh::after {
@@ -5757,7 +5757,7 @@ footer .right-box .link-item-box .link-item {
 }
 @media all and (max-width: 1024px) {
   .contact-body .top-banner-box .main-title-box .main-title-zh {
-    margin-top: 3vw;
+    margin-top: 5.5vw;
   }
 }
 .contact-body .top-banner-box .main-title-box .main-title-en {
@@ -6292,7 +6292,7 @@ footer .right-box .link-item-box .link-item {
 }
 @media all and (max-width: 1024px) {
   .news-body .top-banner-box .main-title-box .main-title-zh {
-    margin-top: 3vw;
+    margin-top: 4vw;
   }
 }
 .news-body .top-banner-box .main-title-box .main-title-en {
@@ -7105,7 +7105,7 @@ footer .right-box .link-item-box .link-item {
 }
 @media all and (max-width: 1024px) {
   .qa-body .top-banner-box .main-title-box .main-title-zh {
-    margin-top: 3vw;
+    margin-top: 5vw;
   }
 }
 .qa-body .top-banner-box .main-title-box .main-title-en {
