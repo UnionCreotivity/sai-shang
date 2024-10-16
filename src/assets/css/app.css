@@ -276,7 +276,9 @@ header .menu-btn .close-menu {
 }
 @media all and (max-width: 500px) {
   .menu-box .menu {
-    padding-top: 27vw;
+    padding-top: 0vw;
+    justify-content: center;
+    height: 170vw;
   }
 }
 .menu-box .menu .link-item-box {

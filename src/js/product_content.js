@@ -5,6 +5,26 @@ window.onload = function () {
 
     gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
+    let loadingScreen = document.querySelector(".loading-screen");
+    let loadingText = document.getElementById("loading-text");
+    let percent = 1;
+
+    function updateProgress() {
+
+        loadingText.textContent = percent + "%";
+        percent++;
+        if (percent <= 100) {
+            setTimeout(updateProgress, 8);
+        } else {
+
+            let tl = gsap.timeline({});
+            tl.to(loadingScreen, { duration: 1, opacity: 0, ease: "power1.inOut" })
+                .to(loadingScreen, { duration: 1.2, display: 'none', })
+
+        }
+
+    }
+    updateProgress();
 
     const imgSwiper = new Swiper(".img-swiper", {
         loop: true,

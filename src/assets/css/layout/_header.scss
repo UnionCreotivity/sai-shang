@@ -157,7 +157,11 @@ header {
     flex-direction: column;
     padding-top: 15vw;
     @media all and (max-width: 500px) {
-      padding-top: 27vw;
+      // padding-top: 27vw;
+
+      padding-top: 0vw;
+      justify-content: center;
+      height: 170vw;
     }
     .link-item-box {
       display: flex;

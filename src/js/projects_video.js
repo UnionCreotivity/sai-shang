@@ -51,6 +51,27 @@ window.onload = function () {
     };
     menuClick();
 
+    let loadingScreen = document.querySelector(".loading-screen");
+    let loadingText = document.getElementById("loading-text");
+    let percent = 1;
+
+    function updateProgress() {
+
+        loadingText.textContent = percent + "%";
+        percent++;
+        if (percent <= 100) {
+            setTimeout(updateProgress, 8);
+        } else {
+
+            let tl = gsap.timeline({});
+            tl.to(loadingScreen, { duration: 1, opacity: 0, ease: "power1.inOut" })
+                .to(loadingScreen, { duration: 1.2, display: 'none', })
+
+        }
+
+    }
+    updateProgress();
+
     if (window_width <= 1024) {
 
         const contents = document.querySelectorAll('.content-mobile');
