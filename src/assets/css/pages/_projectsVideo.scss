@@ -18,8 +18,10 @@
       height: 56.5vw;
     }
     @media all and (max-width: 500px) {
-      height: 59vw;
+      height: 67vw;
+      padding-top: 11vw;
     }
+
     .top-banner {
       width: 100%;
       @media all and (max-width: 1024px) {
@@ -296,9 +298,12 @@
           transform: inherit;
         }
       }
+      img {
+        width: 100%;
+      }
 
       @media all and (max-width: 1024px) {
-        width: 13vw;
+        width: 17vw;
         margin-top: 6vw;
         position: initial;
         bottom: initial;

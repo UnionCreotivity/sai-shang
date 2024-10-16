@@ -47,7 +47,7 @@
           padding: 1vw;
           @media all and (max-width: 1024px) {
             left: 3vw;
-            top: 70vw;
+            top: 80vw;
           }
           img {
             width: 0.8vw;
@@ -65,7 +65,7 @@
           cursor: pointer;
           @media all and (max-width: 1024px) {
             right: 3vw;
-            top: 70vw;
+            top: 80vw;
           }
           img {
             width: 0.8vw;
@@ -355,6 +355,9 @@
       }
       .icon {
         @include pageContentTitleIcon();
+        @media all and (max-width: 1024px) {
+          width: 5.5vw;
+        }
       }
       .zh {
         @include pageContentZHTitle();

@@ -133,7 +133,7 @@ header {
     padding-left: 5vw;
     padding-top: 4vw;
     padding-bottom: 4vw;
-    padding-right: 4vw;
+    padding-right: 5vw;
   }
 }
 header .logo-box {
@@ -272,7 +272,12 @@ header .menu-btn .close-menu {
 .menu-box .menu {
   display: flex;
   flex-direction: column;
-  padding-top: 30vw;
+  padding-top: 15vw;
+}
+@media all and (max-width: 500px) {
+  .menu-box .menu {
+    padding-top: 27vw;
+  }
 }
 .menu-box .menu .link-item-box {
   display: flex;
@@ -540,7 +545,7 @@ footer .right-box .link-item-box .link-item {
 @media all and (max-width: 1024px) {
   .index-body .card1 .banner-box .banner-swiper .swiper-prev {
     left: 3vw;
-    top: 70vw;
+    top: 80vw;
   }
 }
 .index-body .card1 .banner-box .banner-swiper .swiper-prev img {
@@ -562,7 +567,7 @@ footer .right-box .link-item-box .link-item {
 @media all and (max-width: 1024px) {
   .index-body .card1 .banner-box .banner-swiper .swiper-next {
     right: 3vw;
-    top: 70vw;
+    top: 80vw;
   }
 }
 .index-body .card1 .banner-box .banner-swiper .swiper-next img {
@@ -905,6 +910,11 @@ footer .right-box .link-item-box .link-item {
     width: 6.5vw;
     top: -3.3vw;
     left: -8vw;
+  }
+}
+@media all and (max-width: 1024px) {
+  .index-body .card3 .title-box .icon {
+    width: 5.5vw;
   }
 }
 .index-body .card3 .title-box .zh {
@@ -1444,6 +1454,11 @@ footer .right-box .link-item-box .link-item {
     height: initial;
   }
 }
+@media all and (max-width: 500px) {
+  .about-body .top-banner-box {
+    padding-top: 12vw;
+  }
+}
 .about-body .top-banner-box .top-banner {
   width: 100%;
 }
@@ -1592,6 +1607,11 @@ footer .right-box .link-item-box .link-item {
   padding-top: 6vw;
   display: flex;
   flex-direction: column;
+}
+@media all and (max-width: 1024px) {
+  .about-body .page-container {
+    padding-top: 3vw;
+  }
 }
 .about-body .page-container .left-nav-box {
   position: absolute;
@@ -2397,9 +2417,12 @@ footer .right-box .link-item-box .link-item {
     transform: inherit;
   }
 }
+.about-body .page-container .top-btn img {
+  width: 100%;
+}
 @media all and (max-width: 1024px) {
   .about-body .page-container .top-btn {
-    width: 13vw;
+    width: 17vw;
     margin-top: 15vw;
     position: initial;
     bottom: initial;
@@ -2430,6 +2453,11 @@ footer .right-box .link-item-box .link-item {
 @media all and (max-width: 1024px) {
   .events-history-body .top-banner-box {
     height: initial;
+  }
+}
+@media all and (max-width: 500px) {
+  .events-history-body .top-banner-box {
+    padding-top: 12vw;
   }
 }
 .events-history-body .top-banner-box .top-banner {
@@ -2585,6 +2613,7 @@ footer .right-box .link-item-box .link-item {
 @media all and (max-width: 1024px) {
   .events-history-body .page-container {
     padding-bottom: 0vw;
+    padding-top: 3vw;
   }
 }
 .events-history-body .page-container .bg-item-mobile {
@@ -3067,7 +3096,7 @@ footer .right-box .link-item-box .link-item {
 }
 @media all and (max-width: 500px) {
   .brand-body .top-banner-box {
-    height: 62vw;
+    height: 68vw;
   }
 }
 .brand-body .top-banner-box .top-banner {
@@ -3242,9 +3271,12 @@ footer .right-box .link-item-box .link-item {
     transform: inherit;
   }
 }
+.brand-body .page-container .top-btn img {
+  width: 100%;
+}
 @media all and (max-width: 1024px) {
   .brand-body .page-container .top-btn {
-    width: 15vw;
+    width: 17vw;
     margin-top: 15vw;
     position: initial;
     bottom: initial;
@@ -3426,6 +3458,11 @@ footer .right-box .link-item-box .link-item {
     height: initial;
   }
 }
+@media all and (max-width: 500px) {
+  .product-body .top-banner-box {
+    padding-top: 12vw;
+  }
+}
 .product-body .top-banner-box .top-banner {
   width: 100%;
 }
@@ -3436,7 +3473,7 @@ footer .right-box .link-item-box .link-item {
 }
 @media all and (max-width: 500px) {
   .product-body .top-banner-box .top-banner {
-    margin-top: -8vw;
+    margin-top: -2vw;
   }
 }
 .product-body .top-banner-box .item1 {
@@ -3449,12 +3486,12 @@ footer .right-box .link-item-box .link-item {
   .product-body .top-banner-box .item1 {
     width: 63vw;
     left: 0vw;
-    top: 0.5vw;
+    top: -2.5vw;
   }
 }
 @media all and (max-width: 500px) {
   .product-body .top-banner-box .item1 {
-    top: 2vw;
+    top: 7vw;
   }
 }
 .product-body .top-banner-box .item2 {
@@ -3854,9 +3891,11 @@ footer .right-box .link-item-box .link-item {
 }
 @media all and (max-width: 1024px) {
   .product-body .page-container .pagination button {
-    font-size: 3.8vw;
-    padding: 0.5vw 1.6vw;
-    font-weight: 500;
+    font-size: 4.3vw;
+    padding: inherit;
+    width: 7vw;
+    height: 7vw;
+    font-weight: 400;
   }
 }
 .product-body .page-container .pagination #page-numbers button:hover {
@@ -3889,9 +3928,12 @@ footer .right-box .link-item-box .link-item {
     transform: inherit;
   }
 }
+.product-body .page-container .top-btn img {
+  width: 100%;
+}
 @media all and (max-width: 1024px) {
   .product-body .page-container .top-btn {
-    width: 13vw;
+    width: 17vw;
     margin-top: 15vw;
     position: initial;
     bottom: initial;
@@ -3969,7 +4011,7 @@ footer .right-box .link-item-box .link-item {
 @media all and (max-width: 1024px) {
   .product-content-body .product-content-container .page-container .product-box .img-box {
     width: 100%;
-    margin-top: 21vw;
+    margin-top: 26vw;
     margin-bottom: 6vw;
   }
 }
@@ -4021,6 +4063,13 @@ footer .right-box .link-item-box .link-item {
     width: 2vw;
   }
 }
+@media all and (max-width: 500px) {
+  .product-content-body .product-content-container .page-container .product-box .img-box .img-swiper .prev img {
+    width: 7.5vw;
+    padding-right: 2vw;
+    padding-left: 2vw;
+  }
+}
 .product-content-body .product-content-container .page-container .product-box .img-box .img-swiper .next {
   position: absolute;
   top: 9vw;
@@ -4040,6 +4089,13 @@ footer .right-box .link-item-box .link-item {
 @media all and (max-width: 1024px) {
   .product-content-body .product-content-container .page-container .product-box .img-box .img-swiper .next img {
     width: 2vw;
+  }
+}
+@media all and (max-width: 500px) {
+  .product-content-body .product-content-container .page-container .product-box .img-box .img-swiper .next img {
+    width: 7.5vw;
+    padding-right: 2vw;
+    padding-left: 2vw;
   }
 }
 .product-content-body .product-content-container .page-container .product-box .img-box .img-swiper .swiper-pagination-horizontal {
@@ -4116,6 +4172,11 @@ footer .right-box .link-item-box .link-item {
 @media all and (max-width: 1024px) {
   .product-content-body .product-content-container .page-container .product-box .product-content .sort-box .sort {
     font-size: 3.5vw;
+    padding: 1.8vw;
+    padding-bottom: 2vw;
+    padding-left: 3vw;
+    padding-right: 2.9vw;
+    border-radius: 1.2vw;
   }
 }
 .product-content-body .product-content-container .page-container .product-box .product-content .title-box {
@@ -4130,7 +4191,7 @@ footer .right-box .link-item-box .link-item {
 @media all and (max-width: 1024px) {
   .product-content-body .product-content-container .page-container .product-box .product-content .title-box {
     position: absolute;
-    top: 8vw;
+    top: 12vw;
     margin-bottom: 0vw;
     font-size: 5vw;
   }
@@ -4183,7 +4244,7 @@ footer .right-box .link-item-box .link-item {
 }
 @media all and (max-width: 1024px) {
   .product-content-body .product-content-container .page-container .product-box .product-content .list-box .list .title {
-    font-size: 3.75vw;
+    font-size: 4.2vw;
   }
 }
 .product-content-body .product-content-container .page-container .product-box .product-content .list-box .list .content {
@@ -4198,6 +4259,7 @@ footer .right-box .link-item-box .link-item {
 @media all and (max-width: 1024px) {
   .product-content-body .product-content-container .page-container .product-box .product-content .list-box .list .content {
     font-size: 3.6vw;
+    margin-left: 3vw;
   }
 }
 .product-content-body .product-content-container .page-container .product-box .product-content .shop {
@@ -4223,7 +4285,7 @@ footer .right-box .link-item-box .link-item {
 }
 @media all and (max-width: 1024px) {
   .product-content-body .product-content-container .page-container .product-box .product-content .shop .title {
-    font-size: 3.75vw;
+    font-size: 4.2vw;
     margin-bottom: 4.5vw;
   }
 }
@@ -4281,7 +4343,7 @@ footer .right-box .link-item-box .link-item {
 }
 @media all and (max-width: 1024px) {
   .product-content-body .product-content-container .page-container .main-content h1 {
-    font-size: 3.75vw;
+    font-size: 4.2vw;
     margin-bottom: 3vw;
     margin-top: 4vw;
   }
@@ -4313,9 +4375,12 @@ footer .right-box .link-item-box .link-item {
     transform: inherit;
   }
 }
+.product-content-body .product-content-container .top-btn img {
+  width: 100%;
+}
 @media all and (max-width: 1024px) {
   .product-content-body .product-content-container .top-btn {
-    width: 13vw;
+    width: 17vw;
     margin-top: 4vw;
     position: initial;
     bottom: initial;
@@ -4351,7 +4416,8 @@ footer .right-box .link-item-box .link-item {
 }
 @media all and (max-width: 500px) {
   .projects-video-body .top-banner-box {
-    height: 59vw;
+    height: 67vw;
+    padding-top: 11vw;
   }
 }
 .projects-video-body .top-banner-box .top-banner {
@@ -4717,9 +4783,12 @@ footer .right-box .link-item-box .link-item {
     transform: inherit;
   }
 }
+.projects-video-body .page-container .top-btn img {
+  width: 100%;
+}
 @media all and (max-width: 1024px) {
   .projects-video-body .page-container .top-btn {
-    width: 13vw;
+    width: 17vw;
     margin-top: 6vw;
     position: initial;
     bottom: initial;
@@ -4755,7 +4824,8 @@ footer .right-box .link-item-box .link-item {
 }
 @media all and (max-width: 500px) {
   .projects-teaching-culture-body .top-banner-box {
-    height: 59vw;
+    height: 67vw;
+    padding-top: 11vw;
   }
 }
 .projects-teaching-culture-body .top-banner-box .top-banner {
@@ -5145,8 +5215,11 @@ footer .right-box .link-item-box .link-item {
 }
 @media all and (max-width: 1024px) {
   .projects-teaching-culture-body .page-container .pagination button {
-    font-size: 3.8vw;
-    padding: 0.5vw 1.6vw;
+    font-size: 4.3vw;
+    padding: inherit;
+    width: 7vw;
+    height: 7vw;
+    font-weight: 400;
   }
 }
 .projects-teaching-culture-body .page-container .pagination #page-numbers button:hover {
@@ -5179,9 +5252,12 @@ footer .right-box .link-item-box .link-item {
     transform: inherit;
   }
 }
+.projects-teaching-culture-body .page-container .top-btn img {
+  width: 100%;
+}
 @media all and (max-width: 1024px) {
   .projects-teaching-culture-body .page-container .top-btn {
-    width: 13vw;
+    width: 17vw;
     margin-top: 12vw;
     position: initial;
     bottom: initial;
@@ -5215,7 +5291,7 @@ footer .right-box .link-item-box .link-item {
 }
 @media all and (max-width: 1024px) {
   .projects-content-body .projects-container .page-container {
-    padding-top: 17vw;
+    padding-top: 19vw;
     width: 88%;
   }
 }
@@ -5237,13 +5313,12 @@ footer .right-box .link-item-box .link-item {
 }
 @media all and (max-width: 1024px) {
   .projects-content-body .projects-container .page-container .sort-box .sort {
-    font-size: 3.3vw;
+    font-size: 3.5vw;
     padding: 1.8vw;
     padding-bottom: 2vw;
     padding-left: 3vw;
     padding-right: 2.9vw;
     border-radius: 1.2vw;
-    font-weight: initial;
     margin-bottom: 3vw;
   }
 }
@@ -5531,6 +5606,11 @@ footer .right-box .link-item-box .link-item {
 .projects-content-body .projects-container .page-container .about-article-box .article-box .item:hover .img-box img {
   transform: scale(1.1);
 }
+@media all and (max-width: 1024px) {
+  .projects-content-body .projects-container .page-container .about-article-box .article-box .item:hover .img-box img {
+    transform: scale(1);
+  }
+}
 .projects-content-body .projects-container .page-container .back-btn {
   display: flex;
   justify-content: center;
@@ -5548,9 +5628,12 @@ footer .right-box .link-item-box .link-item {
     transform: inherit;
   }
 }
+.projects-content-body .projects-container .page-container .back-btn img {
+  width: 100%;
+}
 @media all and (max-width: 1024px) {
   .projects-content-body .projects-container .page-container .back-btn {
-    width: 13vw;
+    width: 17vw;
     margin-top: 15vw;
     position: initial;
     bottom: initial;
@@ -5576,6 +5659,11 @@ footer .right-box .link-item-box .link-item {
   flex-direction: column;
   position: relative;
 }
+@media all and (max-width: 500px) {
+  .contact-body .top-banner-box {
+    padding-top: 14vw;
+  }
+}
 .contact-body .top-banner-box .top-banner {
   width: 100%;
 }
@@ -5589,6 +5677,7 @@ footer .right-box .link-item-box .link-item {
   width: 25vw;
   left: 0vw;
   bottom: 0.2vw;
+  z-index: 10;
 }
 @media all and (max-width: 1920px) {
   .contact-body .top-banner-box .item1 {
@@ -5610,6 +5699,7 @@ footer .right-box .link-item-box .link-item {
   width: 31vw;
   right: 0vw;
   top: 4vw;
+  z-index: 10;
 }
 @media all and (max-width: 1024px) {
   .contact-body .top-banner-box .item2 {
@@ -5622,6 +5712,7 @@ footer .right-box .link-item-box .link-item {
   top: 56%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 1;
 }
 @media all and (max-width: 1024px) {
   .contact-body .top-banner-box .frame {
@@ -6093,6 +6184,11 @@ footer .right-box .link-item-box .link-item {
     height: initial;
   }
 }
+@media all and (max-width: 500px) {
+  .news-body .top-banner-box {
+    padding-top: 7vw;
+  }
+}
 .news-body .top-banner-box .top-banner {
   width: 100%;
 }
@@ -6103,7 +6199,7 @@ footer .right-box .link-item-box .link-item {
 }
 @media all and (max-width: 500px) {
   .news-body .top-banner-box .top-banner {
-    margin-top: -8vw;
+    margin-top: -2vw;
   }
 }
 .news-body .top-banner-box .item1 {
@@ -6114,9 +6210,14 @@ footer .right-box .link-item-box .link-item {
 }
 @media all and (max-width: 1024px) {
   .news-body .top-banner-box .item1 {
-    width: 62vw;
+    width: 70vw;
     right: -20vw;
-    top: 9vw;
+    top: 12vw;
+  }
+}
+@media all and (max-width: 500px) {
+  .news-body .top-banner-box .item1 {
+    top: 20vw;
   }
 }
 .news-body .top-banner-box .item2 {
@@ -6325,7 +6426,7 @@ footer .right-box .link-item-box .link-item {
 }
 @media all and (max-width: 1024px) {
   .news-body .page-container .content-box .item-box:hover .left-box .title {
-    color: inherit;
+    color: #3b3b3b;
   }
 }
 .news-body .page-container .content-box .item-box:hover .right-box img {
@@ -6333,7 +6434,7 @@ footer .right-box .link-item-box .link-item {
 }
 @media all and (max-width: 1024px) {
   .news-body .page-container .content-box .item-box:hover .right-box img {
-    transform: inherit;
+    transform: scale(1);
   }
 }
 .news-body .page-container .content-box .item-box:first-child {
@@ -6377,15 +6478,13 @@ footer .right-box .link-item-box .link-item {
 }
 @media all and (max-width: 1024px) {
   .news-body .page-container .content-box .item-box .left-box .sort-date-box .sort-box .sort {
-    font-size: 3.3vw;
+    font-size: 3.4vw;
     padding: 1.8vw;
     padding-bottom: 2vw;
     padding-left: 3vw;
     padding-right: 2.9vw;
-    display: flex;
-    border-radius: 1.2vw;
-    font-weight: initial;
     margin-bottom: 3vw;
+    border-radius: 1.2vw;
   }
 }
 .news-body .page-container .content-box .item-box .left-box .sort-date-box .date {
@@ -6460,9 +6559,11 @@ footer .right-box .link-item-box .link-item {
 }
 @media all and (max-width: 1024px) {
   .news-body .page-container .pagination button {
-    font-size: 3.8vw;
-    padding: 0.5vw 1.6vw;
-    font-weight: 500;
+    font-size: 4.3vw;
+    padding: inherit;
+    width: 7vw;
+    height: 7vw;
+    font-weight: 400;
   }
 }
 .news-body .page-container .pagination #page-numbers button:hover {
@@ -6472,7 +6573,7 @@ footer .right-box .link-item-box .link-item {
 @media all and (max-width: 1024px) {
   .news-body .page-container .pagination #page-numbers button:hover {
     background-color: inherit;
-    color: inherit;
+    color: #3b3b3b;
   }
 }
 .news-body .page-container .pagination .active {
@@ -6495,9 +6596,12 @@ footer .right-box .link-item-box .link-item {
     transform: inherit;
   }
 }
+.news-body .page-container .top-btn img {
+  width: 100%;
+}
 @media all and (max-width: 1024px) {
   .news-body .page-container .top-btn {
-    width: 13vw;
+    width: 17vw;
     margin-top: 15vw;
     position: initial;
     bottom: initial;
@@ -6865,9 +6969,12 @@ footer .right-box .link-item-box .link-item {
     transform: inherit;
   }
 }
+.news-content-body .news-container .page-container .back-btn img {
+  width: 100%;
+}
 @media all and (max-width: 1024px) {
   .news-content-body .news-container .page-container .back-btn {
-    width: 13vw;
+    width: 17vw;
     margin-top: 15vw;
     position: initial;
     bottom: initial;
@@ -6895,7 +7002,14 @@ footer .right-box .link-item-box .link-item {
 }
 @media all and (max-width: 1024px) {
   .qa-body .top-banner-box {
-    height: initial;
+    overflow: hidden;
+    height: 56.5vw;
+  }
+}
+@media all and (max-width: 500px) {
+  .qa-body .top-banner-box {
+    height: 67vw;
+    padding-top: 11vw;
   }
 }
 .qa-body .top-banner-box .top-banner {
@@ -6905,7 +7019,7 @@ footer .right-box .link-item-box .link-item {
 }
 @media all and (max-width: 1024px) {
   .qa-body .top-banner-box .top-banner {
-    margin-top: -10vw;
+    margin-top: -7vw;
   }
 }
 .qa-body .top-banner-box .item1 {
@@ -7179,7 +7293,7 @@ footer .right-box .link-item-box .link-item {
 }
 @media all and (max-width: 1024px) {
   .qa-body .qa-box ul.accordion .qa-title-box .qa-title-left .qa-title {
-    font-size: 3.55vw;
+    font-size: 3.75vw;
     margin-left: 2vw;
   }
 }
@@ -7198,8 +7312,8 @@ footer .right-box .link-item-box .link-item {
 }
 @media all and (max-width: 1024px) {
   .qa-body .qa-box ul.accordion .qa-title-box .more-open-box {
-    width: 3.2vw;
-    height: 3.2vw;
+    width: 4vw;
+    height: 4vw;
     margin-right: 0.5vw;
   }
 }
@@ -7298,9 +7412,11 @@ footer .right-box .link-item-box .link-item {
 }
 @media all and (max-width: 1024px) {
   .qa-body .pagination button {
-    font-size: 3.8vw;
-    padding: 0.5vw 1.6vw;
-    font-weight: 500;
+    font-size: 4.3vw;
+    padding: inherit;
+    width: 7vw;
+    height: 7vw;
+    font-weight: 400;
   }
 }
 .qa-body .pagination #page-numbers button:hover {
@@ -7333,9 +7449,12 @@ footer .right-box .link-item-box .link-item {
     transform: inherit;
   }
 }
+.qa-body .top-btn img {
+  width: 100%;
+}
 @media all and (max-width: 1024px) {
   .qa-body .top-btn {
-    width: 13vw;
+    width: 17vw;
     margin-top: 11vw;
     position: initial;
     bottom: initial;

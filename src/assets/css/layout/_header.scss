@@ -22,7 +22,7 @@ header {
     padding-left: 5vw;
     padding-top: 4vw;
     padding-bottom: 4vw;
-    padding-right: 4vw;
+    padding-right: 5vw;
   }
   .logo-box {
     display: flex;
@@ -155,7 +155,10 @@ header {
   .menu {
     display: flex;
     flex-direction: column;
-    padding-top: 30vw;
+    padding-top: 15vw;
+    @media all and (max-width: 500px) {
+      padding-top: 27vw;
+    }
     .link-item-box {
       display: flex;
       align-self: center;

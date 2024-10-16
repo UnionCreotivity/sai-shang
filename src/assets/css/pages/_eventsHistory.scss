@@ -16,6 +16,9 @@
     @media all and (max-width: 1024px) {
       height: initial;
     }
+    @media all and (max-width: 500px) {
+      padding-top: 12vw;
+    }
     .top-banner {
       width: 100%;
       @media all and (max-width: 1024px) {
@@ -133,6 +136,7 @@
     padding-bottom: 15vw;
     @media all and (max-width: 1024px) {
       padding-bottom: 0vw;
+      padding-top: 3vw;
     }
 
     .bg-item-mobile {

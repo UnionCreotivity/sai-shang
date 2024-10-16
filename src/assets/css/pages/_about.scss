@@ -16,6 +16,9 @@
     @media all and (max-width: 1024px) {
       height: initial;
     }
+    @media all and (max-width: 500px) {
+      padding-top: 12vw;
+    }
     .top-banner {
       width: 100%;
       @media all and (max-width: 1024px) {
@@ -133,7 +136,9 @@
     padding-top: 6vw;
     display: flex;
     flex-direction: column;
-
+    @media all and (max-width: 1024px) {
+      padding-top: 3vw;
+    }
     .left-nav-box {
       position: absolute;
       left: 5vw;
@@ -631,8 +636,11 @@
         }
       }
 
+      img {
+        width: 100%;
+      }
       @media all and (max-width: 1024px) {
-        width: 13vw;
+        width: 17vw;
         margin-top: 15vw;
         position: initial;
         bottom: initial;

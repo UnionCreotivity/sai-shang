@@ -55,7 +55,7 @@
           flex-direction: column;
           @media all and (max-width: 1024px) {
             width: 100%;
-            margin-top: 21vw;
+            margin-top: 26vw;
             margin-bottom: 6vw;
           }
           .img-swiper {
@@ -102,6 +102,12 @@
                 @media all and (max-width: 1024px) {
                   width: 2vw;
                 }
+                @media all and (max-width: 500px) {
+                  width: 7.5vw;
+
+                  padding-right: 2vw;
+                  padding-left: 2vw;
+                }
               }
             }
             .next {
@@ -114,10 +120,18 @@
                 top: 22vw;
                 right: 4vw;
               }
+              @media all and (max-width: 500px) {
+              }
               img {
                 width: 0.8vw;
                 @media all and (max-width: 1024px) {
                   width: 2vw;
+                }
+                @media all and (max-width: 500px) {
+                  width: 7.5vw;
+
+                  padding-right: 2vw;
+                  padding-left: 2vw;
                 }
               }
             }
@@ -182,6 +196,11 @@
               padding-bottom: 0.35vw;
               @media all and (max-width: 1024px) {
                 font-size: 3.5vw;
+                padding: 1.8vw;
+                padding-bottom: 2vw;
+                padding-left: 3vw;
+                padding-right: 2.9vw;
+                border-radius: 1.2vw;
               }
             }
           }
@@ -196,7 +215,7 @@
             margin-bottom: 2vw;
             @media all and (max-width: 1024px) {
               position: absolute;
-              top: 8vw;
+              top: 12vw;
               margin-bottom: 0vw;
               font-size: $zh-title;
             }
@@ -251,7 +270,7 @@
                 letter-spacing: 0.2em;
                 font-family: "Noto Serif TC";
                 @media all and (max-width: 1024px) {
-                  font-size: $content;
+                  font-size: 4.2vw;
                 }
               }
               .content {
@@ -264,6 +283,7 @@
                 font-size: $font-17;
                 @media all and (max-width: 1024px) {
                   font-size: 3.6vw;
+                  margin-left: 3vw;
                 }
               }
             }
@@ -287,7 +307,7 @@
               letter-spacing: 0.2em;
               font-family: "Noto Serif TC";
               @media all and (max-width: 1024px) {
-                font-size: $content;
+                font-size: 4.2vw;
                 margin-bottom: 4.5vw;
               }
             }
@@ -341,7 +361,7 @@
           letter-spacing: 0.2em;
           margin-bottom: 1vw;
           @media all and (max-width: 1024px) {
-            font-size: $content;
+            font-size: 4.2vw;
             margin-bottom: 3vw;
             margin-top: 4vw;
           }
@@ -372,9 +392,12 @@
           transform: inherit;
         }
       }
+      img {
+        width: 100%;
+      }
 
       @media all and (max-width: 1024px) {
-        width: 13vw;
+        width: 17vw;
         margin-top: 4vw;
         position: initial;
         bottom: initial;

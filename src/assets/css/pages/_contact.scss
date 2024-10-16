@@ -11,7 +11,9 @@
     display: flex;
     flex-direction: column;
     position: relative;
-
+    @media all and (max-width: 500px) {
+      padding-top: 14vw;
+    }
     .top-banner {
       width: 100%;
       @media all and (max-width: 1024px) {
@@ -24,7 +26,7 @@
       width: 25vw;
       left: 0vw;
       bottom: 0.2vw;
-
+      z-index: 10;
       @media all and (max-width: 1920px) {
         bottom: 0.25vw;
       }
@@ -43,6 +45,7 @@
       width: 31vw;
       right: 0vw;
       top: 4vw;
+      z-index: 10;
       @media all and (max-width: 1024px) {
         display: none;
       }
@@ -54,7 +57,7 @@
       top: 56%;
       left: 50%;
       transform: translate(-50%, -50%);
-
+      z-index: 1;
       @media all and (max-width: 1024px) {
         width: 80vw;
         top: 59.5%;

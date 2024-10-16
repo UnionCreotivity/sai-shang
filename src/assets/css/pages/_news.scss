@@ -17,6 +17,9 @@
     @media all and (max-width: 1024px) {
       height: initial;
     }
+    @media all and (max-width: 500px) {
+      padding-top: 7vw;
+    }
 
     .top-banner {
       width: 100%;
@@ -24,7 +27,7 @@
         margin-top: -10vw;
       }
       @media all and (max-width: 500px) {
-        margin-top: -8vw;
+        margin-top: -2vw;
       }
     }
     .item1 {
@@ -33,9 +36,12 @@
       right: 0vw;
       top: 4vw;
       @media all and (max-width: 1024px) {
-        width: 62vw;
+        width: 70vw;
         right: -20vw;
-        top: 9vw;
+        top: 12vw;
+      }
+      @media all and (max-width: 500px) {
+        top: 20vw;
       }
     }
 
@@ -209,7 +215,7 @@
             .title {
               color: #d1a371;
               @media all and (max-width: 1024px) {
-                color: inherit;
+                color: #3b3b3b;
               }
             }
           }
@@ -217,7 +223,7 @@
             img {
               transform: scale(1.2);
               @media all and (max-width: 1024px) {
-                transform: inherit;
+                transform: scale(1);
               }
             }
           }
@@ -255,16 +261,15 @@
                 padding: 0.3vw;
                 padding-left: 0.7vw;
                 padding-bottom: 0.35vw;
+
                 @media all and (max-width: 1024px) {
-                  font-size: 3.3vw;
+                  font-size: 3.4vw;
                   padding: 1.8vw;
                   padding-bottom: 2vw;
                   padding-left: 3vw;
                   padding-right: 2.9vw;
-                  display: flex;
-                  border-radius: 1.2vw;
-                  font-weight: initial;
                   margin-bottom: 3vw;
+                  border-radius: 1.2vw;
                 }
               }
             }
@@ -336,9 +341,11 @@
         cursor: pointer;
         transition: 0.4s ease-in-out;
         @media all and (max-width: 1024px) {
-          font-size: 3.8vw;
-          padding: 0.5vw 1.6vw;
-          font-weight: 500;
+          font-size: 4.3vw;
+          padding: inherit;
+          width: 7vw;
+          height: 7vw;
+          font-weight: 400;
         }
       }
     }
@@ -349,7 +356,7 @@
         color: #3b3b3b;
         @media all and (max-width: 1024px) {
           background-color: inherit;
-          color: inherit;
+          color: #3b3b3b;
         }
       }
     }
@@ -371,9 +378,12 @@
           transform: inherit;
         }
       }
+      img {
+        width: 100%;
+      }
 
       @media all and (max-width: 1024px) {
-        width: 13vw;
+        width: 17vw;
         margin-top: 15vw;
         position: initial;
         bottom: initial;

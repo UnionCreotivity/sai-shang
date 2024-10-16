@@ -19,7 +19,7 @@
       position: relative;
       padding-bottom: 5vw;
       @media all and (max-width: 1024px) {
-        padding-top: 17vw;
+        padding-top: 19vw;
         width: 88%;
       }
       .sort-box {
@@ -37,13 +37,13 @@
           padding-left: 0.6vw;
           padding-bottom: 0.35vw;
           @media all and (max-width: 1024px) {
-            font-size: 3.3vw;
+            font-size: 3.5vw;
             padding: 1.8vw;
             padding-bottom: 2vw;
             padding-left: 3vw;
             padding-right: 2.9vw;
             border-radius: 1.2vw;
-            font-weight: initial;
+
             margin-bottom: 3vw;
           }
         }
@@ -306,6 +306,9 @@
               .img-box {
                 img {
                   transform: scale(1.1);
+                  @media all and (max-width: 1024px) {
+                    transform: scale(1);
+                  }
                 }
               }
             }
@@ -327,9 +330,12 @@
             transform: inherit;
           }
         }
+        img {
+          width: 100%;
+        }
 
         @media all and (max-width: 1024px) {
-          width: 13vw;
+          width: 17vw;
           margin-top: 15vw;
           position: initial;
           bottom: initial;

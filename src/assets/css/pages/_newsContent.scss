@@ -327,9 +327,12 @@
             transform: inherit;
           }
         }
+        img {
+          width: 100%;
+        }
 
         @media all and (max-width: 1024px) {
-          width: 13vw;
+          width: 17vw;
           margin-top: 15vw;
           position: initial;
           bottom: initial;
