@@ -6156,12 +6156,17 @@ footer .right-box .link-item-box .link-item {
     width: 88%;
   }
 }
-.contact-body .page-container .bottom-box img {
-  width: 47vw;
+.contact-body .page-container .bottom-box iframe {
+  width: 100%;
+  height: 15vw;
+  filter: grayscale(1);
+  border-radius: 1vw;
 }
 @media all and (max-width: 1024px) {
-  .contact-body .page-container .bottom-box img {
-    width: 88vw;
+  .contact-body .page-container .bottom-box iframe {
+    height: 69vw;
+    width: 100%;
+    border-radius: 4vw;
   }
 }
 
